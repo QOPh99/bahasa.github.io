@@ -1,6 +1,6 @@
 const sharedData = { 
   categories: {
-            "leven": "mensen groet omgang straat",
+            "leven": "mensen familie familie2 groet omgang straat",
             "dieren": "dieren vogels vissen zee_creaturen insecten",
             "planten": "planten bomen groente fruit kruiden specerijen",
             "relaxen": "thuis met_familie sauna therapie",
@@ -36,11 +36,12 @@ const sharedData = {
    wordLists: {
             "mensen": [
                 ["ik", "saya"],
-                ["jij", "kamu"],
+                ["jij", "kamu/lo"],
                 ["hij", "dia"],
                 ["zij (meisje)", "dia"],
-                ["wij", "kami"],
-                ["jullie", "anda"],
+                ["wij(zonder jou)", "kami"],
+                ["wij(met jou)", "kita"],
+                ["jullie", "kalian"],
                 ["zij (groep)", "mereka"],
                 ["vriend", "teman"],
                 ["familie", "keluarga"],
@@ -48,6 +49,39 @@ const sharedData = {
                 ["vader", "ayah"],
                 ["U", "anda"]
             ],
+            "familie": [
+    ["opa", "kakek / opa"],
+    ["oma", "nenek / oma"],
+    ["vader", "ayah / bapak"],
+    ["moeder", "ibu / mama"],
+    ["broer", "kakak / adik laki-laki"],
+    ["zus", "kakak / adik perempuan"],
+    ["zoon", "anak laki-laki / putra"],
+    ["dochter", "anak perempuan / putri"],
+    ["oom", "paman / om"],
+    ["tante", "bibi / tante"],
+    ["neef", "sepupu laki-laki / keponakan laki-laki"],
+    ["nicht", "sepupu perempuan / keponakan perempuan"]
+],
+"familie2": [
+    ["grootvader", "kakek / eyang kakung"],
+    ["grootmoeder", "nenek / eyang putri"],
+    ["kleinzoon", "cucu laki-laki"],
+    ["kleindochter", "cucu perempuan"],
+    ["schoonvader", "mertua laki-laki / ayah mertua"],
+    ["schoonmoeder", "mertua perempuan / ibu mertua"],
+    ["zwager", "ipar laki-laki / adik ipar laki-laki"],
+    ["schoonzus", "ipar perempuan / adik ipar perempuan"],
+    ["schoonbroer", "ipar laki-laki (suami kakak / kakak suami)"],
+    ["schoonzus", "ipar perempuan (istri kakak / kakak istri)"],
+    ["achteroom", "paman buyut / om buyut"],
+    ["achternicht", "sepupu buyut / keponakan buyut perempuan"],
+    ["neefje", "keponakan kecil laki-laki"],
+    ["nichtje", "keponakan kecil perempuan"],
+    ["schoonfamilie", "keluarga mertua / besan"],
+    ["familie", "keluarga"],
+    ["verwant", "kerabat / sanak saudara"]
+],
             "groet": [
                 ["hallo", "halo"],
                 ["goeie morgen", "selamat pagi"],
@@ -55,8 +89,12 @@ const sharedData = {
                 ["goeie avond", "selamat malam"],
                 ["tot ziens", "sampai jumpa"],
                 ["dank je", "terima kasih"],
-                ["graag gedaan", "sama sama"],
+                ["graag gedaan (bali)", "sama sama"],
+                ["graag gedaan (java)", "gak apa apa"],
                 ["hoe is het", "apa kabar"],
+                ["relax", "santai aja"],
+                ["gewoon", "biasa aja"],
+                ["geen gedoe", "nggak usah"],
                 ["hoe is het met jou", "apa kabarmu"]
             ],
             "omgang": [
