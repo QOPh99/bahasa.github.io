@@ -1,0 +1,359 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.header {
+  display: inline-block;
+  width: 100%;
+  padding: 10px 20px;
+  margin: 10px 0;
+  font-size: 2rem;
+  font-weight: 600;
+  cursor: pointer;
+  border: none;
+  border-radius: 12px;
+  color: #241b1b;
+  text-shadow: 0 1px 3px rgba(0,0,0,0.6);
+  box-shadow: 0 4px 12px rgba(0,0,0,0.25);
+  transition: all 0.28s ease;
+
+  /* Animated gradient for ALL buttons */
+  background: linear-gradient(90deg, hwb(192 56% 7%), hwb(314 5% 63%), hsl(234, 66%, 75%));
+  background-size: 200% 200%;
+  animation: gradient-move 7s ease infinite;
+  opacity: 0.75;   /* 0.0 = invisible, 1.0 = fully opaque */
+
+  transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+
+
+.knop1 {
+  display: inline-block;
+  
+  padding: 14px 20px;
+  margin: 10px 0;
+  font-size: 2rem;
+  font-weight: 600;
+  cursor: pointer;
+  border: none;
+  border-radius: 12px;
+  color: #241b1b;
+  text-shadow: 0 1px 3px rgba(0,0,0,0.6);
+  box-shadow: 0 4px 12px rgba(0,0,0,0.25);
+  transition: all 0.28s ease;
+
+  /* Animated gradient for ALL buttons */
+  background: linear-gradient(90deg, hwb(241 71% 9%), hwb(244 2% 37%), hsl(125, 70%, 21%));
+  background-size: 200% 200%;
+  animation: gradient-move 25s ease infinite;
+  opacity: 0.75;   /* 0.0 = invisible, 1.0 = fully opaque */
+
+  transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+.knop1:hover,
+.knop1:focus-visible {
+  transform: translateY(-4px) scale(1.04);
+  box-shadow: 0 12px 32px rgba(236, 72, 153, 0.55);
+  background-position: right center;
+  opacity: 1.0;    /* become fully opaque on hover */
+  transform: translateY(-4px) scale(1.04);
+}
+
+.knop1:active {
+  transform: translateY(-1px);
+  box-shadow: 0 4px 16px rgba(168, 85, 247, 0.45);
+}
+
+.knop2 {
+  display: inline-block;
+  
+  padding: 14px 20px;
+  margin: 10px 0;
+  font-size: 2rem;
+  font-weight: 600;
+  cursor: pointer;
+  border: none;
+  border-radius: 12px;
+  color: #241b1b;
+  text-shadow: 0 1px 3px rgba(0,0,0,0.6);
+  box-shadow: 0 4px 12px rgba(0,0,0,0.25);
+  transition: all 0.28s ease;
+
+  /* Animated gradient for ALL buttons */
+  background: linear-gradient(90deg, hwb(241 45% 27%), hwb(165 4% 61%), hwb(125 4% 53%));
+  background-size: 200% 200%;
+  animation: gradient-move 17s ease infinite;
+  opacity: 0.75;   /* 0.0 = invisible, 1.0 = fully opaque */
+
+  transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+.knop2:hover,
+.knop2:focus-visible {
+  transform: translateY(-4px) scale(1.04);
+  box-shadow: 0 12px 32px rgba(236, 72, 153, 0.55);
+  background-position: right center;
+  opacity: 1.0;    /* become fully opaque on hover */
+  transform: translateY(-4px) scale(1.04);
+}
+
+.knop2:active {
+  transform: translateY(-1px);
+  box-shadow: 0 4px 16px rgba(168, 85, 247, 0.45);
+}
+
+.knop3 {
+  display: inline-block;
+  
+  padding: 14px 20px;
+  margin: 10px 0;
+  font-size: 2rem;
+  font-weight: 600;
+  cursor: pointer;
+  border: none;
+  border-radius: 12px;
+  color: #241b1b;
+  text-shadow: 0 1px 3px rgba(0,0,0,0.6);
+  box-shadow: 0 4px 12px rgba(0,0,0,0.25);
+  transition: all 0.28s ease;
+
+  /* Animated gradient for ALL buttons */
+  background: linear-gradient(90deg, hwb(241 71% 9%), hwb(244 2% 37%), hsl(125, 70%, 21%));
+  background-size: 200% 200%;
+  animation: gradient-move 14s ease infinite;
+  opacity: 0.75;   /* 0.0 = invisible, 1.0 = fully opaque */
+
+  transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+.knop3:hover,
+.knop3:focus-visible {
+  transform: translateY(-4px) scale(1.04);
+  box-shadow: 0 12px 32px rgba(236, 72, 153, 0.55);
+  background-position: right center;
+  opacity: 1.0;    /* become fully opaque on hover */
+  transform: translateY(-4px) scale(1.04);
+}
+
+.knop3:active {
+  transform: translateY(-1px);
+  box-shadow: 0 4px 16px rgba(168, 85, 247, 0.45);
+}
+
+
+
+body {
+  text-align: center;
+  line-height: 1.5;
+  margin: 0;
+  padding: 20px;
+  padding-top: 20px;
+  max-width: 480px;
+  margin-left: auto;
+  margin-right: auto;
+  min-height: 100vh;
+  background: hsl(46, 86%, 14%);
+  font-family: system-ui, sans-serif;
+  color: hsl(113, 44%, 21%);
+  background-image: url(../pics/waterfall.jpg);
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+
+
+h1 {
+  display: block;
+  width: 100%;
+  padding: 14px 20px;
+  margin: 10px 0;
+  font-size: 1.1rem;
+  font-weight: 600;
+  cursor: pointer;
+  border: none;
+  border-radius: 12px;
+  color: white;
+  text-shadow: 0 1px 3px rgba(0,0,0,0.6);
+  box-shadow: 0 4px 12px rgba(0,0,0,0.25);
+  transition: all 0.28s ease;
+  text-align: center;
+  /* Animated gradient for ALL buttons */
+  background: linear-gradient(90deg, hsl(240, 2%, 9%), hsl(271, 62%, 82%), hsl(340, 5%, 12%));
+  background-size: 200% 200%;
+  animation: gradient-move 7s ease infinite;
+  opacity: 0.65;   /* 0.0 = invisible, 1.0 = fully opaque */
+
+  transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+.button {
+  display: block;
+  width: 100%;
+  padding: 14px 20px;
+  margin: 10px 0;
+  font-size: 1.1rem;
+  font-weight: 600;
+  cursor: pointer;
+  border: none;
+  border-radius: 12px;
+  color: hwb(60 89% 5%);
+  text-shadow: 0 1px 3px rgba(0,0,0,0.6);
+  box-shadow: 0 4px 12px rgba(0,0,0,0.25);
+  transition: all 0.28s ease;
+
+  /* Animated gradient for ALL buttons */
+  background: linear-gradient(90deg, lab(8.2% -5.59 2.72), #2489c4, oklch(51.482% 0.00986 145.707));
+  background-size: 200% 200%;
+  animation: gradient-move 25s ease infinite;
+  opacity: 0.65;   /* 0.0 = invisible, 1.0 = fully opaque */
+
+  transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+.button:hover,
+.button:focus-visible {
+  transform: translateY(-4px) scale(1.04);
+  box-shadow: 0 12px 32px rgba(236, 72, 153, 0.55);
+  background-position: right center;
+  opacity: 1.0;    /* become fully opaque on hover */
+  transform: translateY(-4px) scale(1.04);
+}
+
+.button:active {
+  transform: translateY(-1px);
+  box-shadow: 0 4px 16px rgba(168, 85, 247, 0.45);
+}
+
+/* Hierarchy styles – make levels visually different */
+.main-category {
+  font-size: 1.5rem;
+  font-weight: 700;
+  letter-spacing: 0.1px;
+  padding: 14px 24px;
+}
+
+.group {
+  margin-left: 32px;
+  max-width: calc(100% - 32px);
+  font-size: 1.22rem;
+  font-weight: 600;
+}
+
+.word2 {
+  word-spacing: 1.2em;
+  margin-left: 60px;
+  max-width: calc(100% - 60px);
+  font-size: 1.2rem;
+  opacity: 0.95;
+}
+
+.word {
+    display: flex;
+    justify-content: space-between;     /* ← this is the most important line */
+    align-items: center;
+
+    width: 100%;
+    max-width: 380px;                   /* ← adjust this value to your liking */
+    padding: 10px 20px;
+
+    font-size: 1.1rem;
+}
+
+/* Clicked word feedback */
+.word.clicked {
+  background: #a3e635 !important; /* bright lime */
+  color: #0f172a !important;
+  transform: scale(1.03);
+  box-shadow: 0 0 24px rgba(163, 230, 53, 0.7) !important;
+  animation: none !important; /* stop gradient when clicked */
+}
+/* Quiz option buttons */
+.options button {
+  font-size: 1.3rem;
+  padding: 18px 24px;
+}
+
+.hidden { display: none; }
+
+.score {
+  font-size: 3.2rem;
+  font-weight: bold;
+  text-align: center;
+  margin: 1.5rem 0;
+  color: #fff;
+  text-shadow: 0 2px 8px rgba(0,0,0,0.7);
+}
+
+/* End screen styles */
+
+.end-screen {
+  text-align: center;
+  padding: 2rem 1rem;
+  color: white;
+}
+
+.end-message {
+  font-size: 2.2rem;
+  font-weight: bold;
+  margin-bottom: 1.5rem;
+}
+
+.info {
+  color: #ddd;
+  text-align: center;
+  margin: 1.5rem 0;
+  font-size: 1.1rem;
+}
+
+.feedback {
+  text-align: center;
+  font-size: 1.3rem;
+  margin: 1rem 0;
+  min-height: 1.5em;
+  color: #fff;
+  font-weight: 500;
+  text-shadow: 0 1px 4px rgba(0,0,0,0.5);
+}
+
+/* Wrong answer review panel */
+.wrong-review {
+  background: rgba(255,255,255,0.12);
+  border-radius: 12px;
+  padding: 1.6rem;
+  margin: 1.8rem 0;
+  border: 1px solid rgba(255,255,255,0.2);
+}
+
+.wrong-title {
+  color: #ff6b6b;
+  font-size: 1.7rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+}
+
+.dutch-word {
+  font-size: 1.4rem;
+  margin: 0.6rem 0;
+}
+
+.correct-word {
+  font-size: 1.7rem;
+  font-weight: bold;
+  color: #5db447;
+  margin: 1rem 0 1.4rem;
+}
+
+/* Animation keyframes */
+@keyframes gradient-move {
+  0%   { background-position: 0% 50%; }
+  50%  { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+
+

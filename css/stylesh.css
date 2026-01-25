@@ -1,0 +1,144 @@
+
+
+a {
+  text-decoration: none;
+}
+
+.knop1 {
+  display: inline-block;
+  
+  padding: 14px 40px;
+  margin: 10px 0;
+  font-size: 2.2rem;
+  font-weight: 600;
+  cursor: pointer;
+  border: none;
+  border-radius: 12px;
+  color: #241b1b;
+  text-shadow: 0 1px 3px rgba(0,0,0,0.6);
+  box-shadow: 0 4px 12px rgba(0,0,0,0.25);
+  transition: all 0.28s ease;
+
+  /* Animated gradient for ALL buttons */
+  background: linear-gradient(90deg, hsl(100, 6%, 90%), lch(50.34% 95.06 36.55), lab(90.05% -6.88 7.49));
+  background-size: 200% 200%;
+  animation: gradient-move 4s ease infinite;
+  opacity: 0.75;   /* 0.0 = invisible, 1.0 = fully opaque */
+
+  transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+.knop1:hover,
+.knop1:focus-visible {
+  transform: translateY(-4px) scale(1.04);
+  box-shadow: 0 12px 32px rgba(236, 72, 153, 0.55);
+  background-position: right center;
+  opacity: 1.0;    /* become fully opaque on hover */
+  transform: translateY(-4px) scale(1.04);
+}
+
+.knop1:active {
+  transform: translateY(-1px);
+  box-shadow: 0 4px 16px rgba(168, 85, 247, 0.45);
+}
+
+.knop2 {
+  display: inline-block;
+  
+  padding: 14px 60px;
+  margin: 10px 0;
+  font-size: 2.5rem;
+  font-weight: 600;
+  cursor: pointer;
+  border: none;
+  border-radius: 12px;
+  color: hsl(0, 27%, 71%);
+  text-shadow: 0 1px 3px rgba(0,0,0,0.6);
+  box-shadow: 0 4px 12px rgba(0,0,0,0.25);
+  transition: all 0.28s ease;
+
+  /* Animated gradient for ALL buttons */
+  background: linear-gradient(90deg, lab(89.91% 1.7 0.59), #070101, hwb(0 90% 8%));
+  background-size: 200% 200%;
+  animation: gradient-move 7s ease infinite;
+  opacity: 0.75;   /* 0.0 = invisible, 1.0 = fully opaque */
+
+  transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+.knop2:hover:hover,
+.knop2:focus-visible {
+  transform: translateY(-4px) scale(1.04);
+  box-shadow: 0 12px 32px rgba(236, 72, 153, 0.55);
+  background-position: right center;
+  opacity: 1.0;    /* become fully opaque on hover */
+  transform: translateY(-4px) scale(1.04);
+}
+
+.knop2:active {
+  transform: translateY(-1px);
+  box-shadow: 0 4px 16px rgba(168, 85, 247, 0.45);
+}
+
+.knop3 {
+  display: inline-block;
+  
+  padding: 14px 80px;
+  margin: 10px 0;
+  font-size: 2.3rem;
+  font-weight: 600;
+  cursor: pointer;
+  border: none;
+  border-radius: 12px;
+  color: #241b1b;
+  text-shadow: 0 1px 3px rgba(0,0,0,0.6);
+  box-shadow: 0 4px 12px rgba(0,0,0,0.25);
+  transition: all 0.28s ease;
+
+  /* Animated gradient for ALL buttons */
+  background: linear-gradient(90deg, hsl(102, 54%, 81%), hwb(315 81% 7%), hsl(69, 64%, 79%));
+  background-size: 200% 200%;
+  animation: gradient-move 7s ease infinite;
+  opacity: 0.75;   /* 0.0 = invisible, 1.0 = fully opaque */
+
+  transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+.knop3:hover,
+.knop3:focus-visible {
+  transform: translateY(-4px) scale(1.04);
+  box-shadow: 0 12px 32px rgba(236, 72, 153, 0.55);
+  background-position: right center;
+  opacity: 1.0;    /* become fully opaque on hover */
+  transform: translateY(-4px) scale(1.04);
+}
+
+.knop3:active {
+  transform: translateY(-1px);
+  box-shadow: 0 4px 16px rgba(168, 85, 247, 0.45);
+}
+
+/* Animation keyframes */
+@keyframes gradient-move {
+  0%   { background-position: 0% 50%; }
+  50%  { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+body {
+  line-height: 1.5;
+  margin: 0;
+  padding: 20px;
+  padding-top: 300px;
+  max-width: 480px;
+  margin-left: auto;
+  margin-right: auto;
+  min-height: 100vh;
+  background: hsl(46, 86%, 14%);
+  font-family: system-ui, sans-serif;
+  color: #fff;
+  text-align: center;
+  background-image: url(../pics/waterfall.jpg);
+  background-position: center;
+  background-size: cover;
+}
