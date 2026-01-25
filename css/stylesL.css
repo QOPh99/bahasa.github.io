@@ -20,9 +20,9 @@
   transition: all 0.28s ease;
 
   /* Animated gradient for ALL buttons */
-  background: linear-gradient(90deg, hwb(192 56% 7%), hwb(314 5% 63%), hsl(234, 66%, 75%));
+  background: linear-gradient(90deg, lab(8.2% -5.59 2.72), hsl(202, 65%, 68%), oklch(51.482% 0.00986 145.707));
   background-size: 200% 200%;
-  animation: gradient-move 7s ease infinite;
+  animation: gradient-move 25s ease infinite;
   opacity: 0.75;   /* 0.0 = invisible, 1.0 = fully opaque */
 
   transition: opacity 0.3s ease, transform 0.3s ease;
@@ -46,7 +46,7 @@
   transition: all 0.28s ease;
 
   /* Animated gradient for ALL buttons */
-  background: linear-gradient(90deg, hwb(241 71% 9%), lab(32.13% 30.75 -51.61), hsl(125, 70%, 21%));
+  background: linear-gradient(90deg, lab(8.2% -5.59 2.72), #2489c4, oklch(51.482% 0.00986 145.707));
   background-size: 200% 200%;
   animation: gradient-move 25s ease infinite;
   opacity: 0.75;   /* 0.0 = invisible, 1.0 = fully opaque */
@@ -84,7 +84,7 @@
   transition: all 0.28s ease;
 
   /* Animated gradient for ALL buttons */
-  background: linear-gradient(90deg, hwb(241 45% 27%), hwb(165 4% 61%), hwb(125 4% 53%));
+  background: linear-gradient(90deg, lab(8.2% -5.59 2.72), hsl(202, 52%, 43%), oklch(51.482% 0.00986 145.707));
   background-size: 200% 200%;
   animation: gradient-move 17s ease infinite;
   opacity: 0.75;   /* 0.0 = invisible, 1.0 = fully opaque */
@@ -122,7 +122,7 @@
   transition: all 0.28s ease;
 
   /* Animated gradient for ALL buttons */
-  background: linear-gradient(90deg, hwb(241 71% 9%), lab(28.24% 44.23 -67.06), hsl(125, 70%, 21%));
+  background: linear-gradient(90deg, lab(8.2% -5.59 2.72), hsl(202, 68%, 31%), oklch(51.482% 0.00986 145.707));
   background-size: 200% 200%;
   animation: gradient-move 14s ease infinite;
   opacity: 0.75;   /* 0.0 = invisible, 1.0 = fully opaque */
