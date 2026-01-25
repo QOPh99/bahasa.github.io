@@ -8,7 +8,7 @@ a {
   display: inline-block;
   
   padding: 14px 40px;
-  margin: 30px 0;
+  margin: 50px 10px 5px 10px;
   font-size: 1.1rem;
   font-weight: 600;
   cursor: pointer;
@@ -84,7 +84,7 @@ a {
   display: inline-block;
   
   padding: 14px 40px;
-  margin: 30px 0;
+  margin: 80px 10px 5px 10px;
   font-size: 1.1rem;
   font-weight: 600;
   cursor: pointer;
@@ -114,6 +114,120 @@ a {
 }
 
 .knop3:active {
+  transform: translateY(-1px);
+  box-shadow: 0 4px 16px rgba(168, 85, 247, 0.45);
+}
+
+.knopgotogame {
+  display: inline-block;
+  
+  padding: 10px 40px;
+  margin: 0px;
+  font-size: 0.9rem;
+  font-weight: 600;
+  cursor: pointer;
+  border: none;
+  border-radius: 12px;
+  color: oklab(18.297% 0.00099 0.00238);
+  text-shadow: 0 1px 3px #ebd03b99;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.25);
+  transition: all 0.28s ease;
+
+  /* Animated gradient for ALL buttons */
+  background: linear-gradient(90deg, hsl(103, 6%, 25%), rgb(226, 222, 217), #cf0202);
+  background-size: 200% 200%;
+  animation: gradient-move 10s ease infinite;
+  opacity: 0.75;   /* 0.0 = invisible, 1.0 = fully opaque */
+
+  transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+.knopgotogame:hover,
+.knopgotogame:focus-visible {
+  transform: translateY(-4px) scale(1.04);
+  box-shadow: 0 12px 32px rgba(236, 72, 153, 0.55);
+  background-position: right center;
+  opacity: 1.0;    /* become fully opaque on hover */
+  transform: translateY(-4px) scale(1.04);
+}
+
+.knopgotogame:active {
+  transform: translateY(-1px);
+  box-shadow: 0 4px 16px rgba(168, 85, 247, 0.45);
+}
+
+.knopgotolexicon {
+  display: inline-block;
+  
+  padding: 10px 40px;
+  margin: 0px 0px;
+  font-size: 0.9rem;
+  font-weight: 600;
+  cursor: pointer;
+  border: none;
+  border-radius: 12px;
+  color: oklab(18.297% 0.00099 0.00238);
+  text-shadow: 0 1px 3px #ebd03b99;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.25);
+  transition: all 0.28s ease;
+
+  /* Animated gradient for ALL buttons */
+  background: linear-gradient(90deg, hsl(103, 6%, 25%), rgb(226, 222, 217), #cf0202);
+  background-size: 200% 200%;
+  animation: gradient-move 7s ease infinite;
+  opacity: 0.75;   /* 0.0 = invisible, 1.0 = fully opaque */
+
+  transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+.knopgotolexicon:hover,
+.knopgotolexicon:focus-visible {
+  transform: translateY(-4px) scale(1.04);
+  box-shadow: 0 12px 32px rgba(236, 72, 153, 0.55);
+  background-position: right center;
+  opacity: 1.0;    /* become fully opaque on hover */
+  transform: translateY(-4px) scale(1.04);
+}
+
+.knopgotolexicon:active {
+  transform: translateY(-1px);
+  box-shadow: 0 4px 16px rgba(168, 85, 247, 0.45);
+}
+
+.knopterug {
+  display: inline-block;
+  
+  padding: 14px 5px;
+  margin: 30px 10px;
+  font-size: 2rem;
+  font-weight: 600;
+  cursor: pointer;
+  border: none;
+  border-radius: 12px;
+  color: lch(94.2% 2.76 87.12);
+  text-shadow: 0 1px 3px rgba(0,0,0,0.6);
+  box-shadow: 0 4px 12px rgba(0,0,0,0.25);
+  transition: all 0.28s ease;
+
+  /* Animated gradient for ALL buttons */
+  background: linear-gradient(90deg, hsl(103, 6%, 25%), rgb(226, 222, 217), #cf0202);
+  background-size: 200% 200%;
+  animation: gradient-move 20s ease infinite;
+  opacity: 0.75;   /* 0.0 = invisible, 1.0 = fully opaque */
+
+  transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+.knopterug:hover,
+.knopterug:focus-visible {
+  transform: translateY(-4px) scale(1.04);
+  box-shadow: 0 12px 32px rgba(236, 72, 153, 0.55);
+  background-position: right center;
+  opacity: 1.0;    /* become fully opaque on hover */
+  transform: translateY(-4px) scale(1.04);
+}
+
+.knopterug:active {
   transform: translateY(-1px);
   box-shadow: 0 4px 16px rgba(168, 85, 247, 0.45);
 }
