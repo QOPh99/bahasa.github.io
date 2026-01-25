@@ -164,6 +164,7 @@ body {
   background-image: url(../pics/waterfall.jpg);
   background-position: center;
   background-size: cover;
+  background-attachment: fixed;
 }
 
 

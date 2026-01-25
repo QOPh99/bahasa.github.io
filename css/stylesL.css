@@ -46,7 +46,7 @@
   transition: all 0.28s ease;
 
   /* Animated gradient for ALL buttons */
-  background: linear-gradient(90deg, hwb(241 71% 9%), hwb(244 2% 37%), hsl(125, 70%, 21%));
+  background: linear-gradient(90deg, hwb(241 71% 9%), lab(32.13% 30.75 -51.61), hsl(125, 70%, 21%));
   background-size: 200% 200%;
   animation: gradient-move 25s ease infinite;
   opacity: 0.75;   /* 0.0 = invisible, 1.0 = fully opaque */
@@ -122,7 +122,7 @@
   transition: all 0.28s ease;
 
   /* Animated gradient for ALL buttons */
-  background: linear-gradient(90deg, hwb(241 71% 9%), hwb(244 2% 37%), hsl(125, 70%, 21%));
+  background: linear-gradient(90deg, hwb(241 71% 9%), lab(28.24% 44.23 -67.06), hsl(125, 70%, 21%));
   background-size: 200% 200%;
   animation: gradient-move 14s ease infinite;
   opacity: 0.75;   /* 0.0 = invisible, 1.0 = fully opaque */
