@@ -1,11 +1,14 @@
 const sharedData = { 
   categories: {
-            "leven": "mensen familie familie2 groet omgang straat",
+            "cijfers": "1_tot_10 grote_cijfers wiskunde",
+            "kleuren": "normaal",
+            "leven": "mensen groet familie meerfamilie omgang straat",
             "dieren": "dieren vogels vissen zee_creaturen insecten",
             "planten": "planten bomen groente fruit kruiden specerijen",
-            "relaxen": "thuis met_familie sauna therapie",
-            "sport": "surf voetbal zeilen boot zee_oceaan",
             "eten": "smaken keuken restaurant dinner ontbijt toetjes snoep",
+            "sport": "surf voetbal zeilen boot zee_oceaan",
+            "weer": "soorten klimaat",
+            "relaxen": "thuis met_familie sauna therapie",
             "taal": "voorzetsels werkwoorden",
             "cultuur": "informeel formeel familie vrienden straat",
             "kleren": "netjes gewoon opgedirkt schoenen",
@@ -13,13 +16,10 @@ const sharedData = {
             "medisch": "personen gebouw symptomen klachten lichaamsdelen medicijnen",
             "reizen": "vliegveld ov station",
             "verkeer": "fiets auto voetganger vvmiddel route regels",
-            "kleuren": "normaal exotisch",
-            "cijfers": "1_tot_10 grote_cijfers wiskunde",
             "geld": "betaal_pin betaal_cash rekening crypto",
             "hobby": "speelgoed e-games board-games",
             "muziek": "luisteren instrumenten audio hifi",
             "visueel": "tv movies",
-            "weer": "soorten klimaat",
             "auto": "interieur onderdelen",
             "baan_werk": "baan",
             "gereedschap": "hout indoor outdoor heavy_equipment",
@@ -29,8 +29,7 @@ const sharedData = {
             "politiek": "officials",
             "officieel_instituut": "stadhuis politieburo kerk",
             "religie": "islam protestantism catholicism hinduism buddhism confucianism",
-            "tec": "pc audio video",
-            "other": "reserved"
+            "tec": "pc audio video"
         },
 
    wordLists: {
@@ -63,7 +62,7 @@ const sharedData = {
     ["neef", "sepupu laki-laki / keponakan laki-laki"],
     ["nicht", "sepupu perempuan / keponakan perempuan"]
 ],
-"familie2": [
+"meerfamilie": [
     ["grootvader", "kakek / eyang kakung"],
     ["grootmoeder", "nenek / eyang putri"],
     ["kleinzoon", "cucu laki-laki"],
