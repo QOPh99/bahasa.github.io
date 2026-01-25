@@ -5,7 +5,7 @@ const sharedData = {
             "planten": "planten bomen groente fruit kruiden specerijen",
             "relaxen": "thuis met_familie sauna therapie",
             "sport": "surf voetbal zeilen boot zee_oceaan",
-            "eten": "smaken koken restaurant dinner ontbijt toetjes snoep",
+            "eten": "smaken keuken restaurant dinner ontbijt toetjes snoep",
             "taal": "voorzetsels werkwoorden",
             "cultuur": "informeel formeel familie vrienden straat",
             "kleren": "netjes gewoon opgedirkt schoenen",
@@ -509,12 +509,12 @@ const sharedData = {
                 ["pikant", "berbumbu"],
                 ["kruidig", "beraroma rempah"],
                 ["fris", "segar"],
-                ["zacht", "lembut / mild"],
-                ["romig", "breamy / kental"],
-                ["hartig", "gurih / asin-manis"],
+                ["zacht", "lembut"],
+                ["romig", "kental"],
+                ["hartig", "gurih"],
                 ["wrang", "sepat / kelat"]
             ],
-            "koken": [
+            "keuken": [
                 ["koken", "memasak"],
                 ["recept", "resep"],
                 ["pan", "panci"],
