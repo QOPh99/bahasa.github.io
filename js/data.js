@@ -1,6 +1,6 @@
 const sharedData = { 
   categories: {
-            "leven": "mensen zinnetjes omgang straat",
+            "leven": "mensen groet omgang straat",
             "dieren": "dieren vogels vissen zee_creaturen insecten",
             "planten": "planten bomen groente fruit kruiden specerijen",
             "relaxen": "thuis met_familie sauna therapie",
@@ -47,7 +47,7 @@ const sharedData = {
                 ["vader", "ayah"],
                 ["U", "anda"]
             ],
-            "zinnetjes": [
+            "groet": [
                 ["hallo", "halo"],
                 ["goeie morgen", "selamat pagi"],
                 ["goeie middag", "selamat siang"],
