@@ -1,15 +1,29 @@
+
 const sharedData = { 
+
+
+  group: {
+    "Mens & Gezondheid": "leven medisch relaxen",
+    "Natuur & Milieu": "dieren planten weer steen metalen",
+    "Eten & Drinken": "eten snoep smaken",
+    "Vrije Tijd & Lifestyle": "relaxen sport hobby muziek uitgaan kleren",
+    "Reizen & Vervoer": "reizen verkeer auto space",
+    "Huis & Wonen": "gereedschap ",
+    "Makkelijk": "cijfers kleuren",
+    "Taal & Communicatie": "taal geld",
+    "Cultuur & Samenleving": "cultuur religie politiek religie officieel_instituut"
+  },
   categories: {
             "cijfers": "1_tot_10 grote_cijfers wiskunde",
             "kleuren": "normaal",
-            "leven": "mensen groet familie meerfamilie omgang straat",
+            "leven": "mensen familie meerfamilie straat",
             "dieren": "dieren vogels vissen zee_creaturen insecten",
             "planten": "planten bomen groente fruit kruiden specerijen",
             "eten": "smaken keuken restaurant dinner ontbijt toetjes snoep",
             "sport": "surf voetbal zeilen boot zee_oceaan",
             "weer": "soorten klimaat",
             "relaxen": "thuis met_familie sauna therapie",
-            "taal": "voorzetsels werkwoorden",
+            "taal": "groet omgang voorzetsels werkwoorden",
             "cultuur": "informeel formeel familie vrienden straat",
             "kleren": "netjes gewoon opgedirkt schoenen",
             "uitgaan": "winkelen mall toko warung restaurant clubbing concert kroeg",
