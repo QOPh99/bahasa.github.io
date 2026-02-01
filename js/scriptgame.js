@@ -1,6 +1,6 @@
 document.addEventListener('DOMContentLoaded', function() {
   // Use shared data from data.js
-  const group = sharedData.group;
+  const groupz = sharedData.groupz;
   const categories = sharedData.categories;
   const wordLists  = sharedData.wordLists;
 
@@ -42,7 +42,7 @@ window.addEventListener('scroll', () => {
 function buildMainMenu() {
   
   mainMenu.innerHTML = "";
-  Object.keys(group).forEach(key => {
+  Object.keys(groupz).forEach(key => {
     const btn = document.createElement("button");
     btn.className = "button gradient";
     btn.textContent = key.charAt(0).toUpperCase() + key.slice(1);
@@ -93,7 +93,7 @@ function openSubMenu2(catKey) { /* catKey is category name */
 gameArea.appendChild(back);
   
   
-  const subs = group[catKey].split(" ").filter(Boolean);
+  const subs = groupz[catKey].split(" ").filter(Boolean);
   subs.forEach(sub => {
     const btn = document.createElement("button");
     btn.className = "button gradient";
