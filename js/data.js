@@ -2,8 +2,8 @@
 const sharedData = { 
 
 
-  group: {
-    "Mens & Gezondheid": "leven medisch relaxen",
+  groupz: {
+    "Mens & Gezondheid": "leven medisch",
     "Natuur & Milieu": "dieren planten weer steen metalen",
     "Eten & Drinken": "eten snoep smaken",
     "Vrije Tijd & Lifestyle": "relaxen sport hobby muziek uitgaan kleren",
@@ -17,14 +17,14 @@ const sharedData = {
             "cijfers": "1_tot_10 grote_cijfers wiskunde",
             "kleuren": "normaal",
             "leven": "mensen familie meerfamilie straat",
-            "dieren": "dieren vogels vissen zee_creaturen insecten",
+            "dieren": "fauna vogels vissen zee_creaturen insecten",
             "planten": "planten bomen groente fruit kruiden specerijen",
             "eten": "smaken keuken restaurant dinner ontbijt toetjes snoep",
             "sport": "surf voetbal zeilen boot zee_oceaan",
             "weer": "soorten klimaat",
             "relaxen": "thuis met_familie sauna therapie",
             "taal": "groet omgang voorzetsels werkwoorden",
-            "cultuur": "informeel formeel familie vrienden straat",
+            "cultuur": "informeel formeel vrienden straat",
             "kleren": "netjes gewoon opgedirkt schoenen",
             "uitgaan": "winkelen mall toko warung restaurant clubbing concert kroeg",
             "medisch": "personen gebouw symptomen klachten lichaamsdelen medicijnen",
@@ -72,6 +72,7 @@ const sharedData = {
     ["zoon", "anak laki-laki / putra"],
     ["dochter", "anak perempuan / putri"],
     ["oom", "paman / om"],
+    ["kind", "anak"],
     ["tante", "bibi / tante"],
     ["neef", "sepupu laki-laki / keponakan laki-laki"],
     ["nicht", "sepupu perempuan / keponakan perempuan"]
@@ -214,7 +215,7 @@ const sharedData = {
                 ["masseur", "tukang pijat"],
                 ["anesthesist", "ahli anestesi"]
             ],
-            "dieren": [
+            "fauna": [
                 ["hond", "anjing"],
                 ["kat", "kucing"],
                 ["konijn", "kelinci"],
@@ -641,7 +642,7 @@ const sharedData = {
                 ["fooi", "tip"],
                 ["pinnen of cash?", "bayar kartu atau tunai?"],
                 ["prijs", "harga"],
-                ["korting", "diskon"]
+                ["korting", "diskon"],
                 ["kleingeld", "uang kecil"]
             ],
             "rekening": [
@@ -957,20 +958,6 @@ const sharedData = {
                 ["prettige dag", "selamat hari"],
                 ["graag gedaan", "sama-sama"],
                 ["mag ik u iets vragen?", "boleh saya bertanya?"]
-            ],
-            "familie": [
-                ["familie", "keluarga"],
-                ["moeder", "ibu"],
-                ["vader", "ayah"],
-                ["broer", "kakak laki-laki / adik laki-laki"],
-                ["zus", "kakak perempuan / adik perempuan"],
-                ["opa", "kakek"],
-                ["oma", "nenek"],
-                ["oom", "paman"],
-                ["tante", "tante"],
-                ["neef", "sepupu laki-laki"],
-                ["nicht", "sepupu perempuan"],
-                ["kind", "anak"]
             ],
             "vrienden": [
                 ["vriend", "teman"],
