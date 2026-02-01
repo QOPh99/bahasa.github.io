@@ -3,13 +3,13 @@ const sharedData = {
 
 
   groupz: {
+    "Makkelijk": "cijfers kleuren",
     "Mens & Gezondheid": "leven medisch",
     "Natuur & Milieu": "dieren planten weer steen metalen",
     "Eten & Drinken": "eten snoep smaken",
     "Vrije Tijd & Lifestyle": "relaxen sport hobby muziek uitgaan kleren",
     "Reizen & Vervoer": "reizen verkeer auto space",
     "Huis & Wonen": "gereedschap ",
-    "Makkelijk": "cijfers kleuren",
     "Taal & Communicatie": "taal geld",
     "Cultuur & Samenleving": "cultuur religie politiek religie officieel_instituut"
   },
