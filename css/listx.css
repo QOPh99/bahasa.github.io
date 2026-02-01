@@ -1,0 +1,480 @@
+
+
+
+.header {
+  
+  width: 100%;
+  padding: 10px 95px; 
+  margin: 5px 20px 5px 10px;
+  font-size: 2rem;
+  font-weight: 600;
+  align-items: center;
+  cursor: pointer;
+  border: none;
+  border-radius: 12px;
+  color: #241b1b;
+  text-shadow: 0 1px 3px rgba(0,0,0,0.6);
+  box-shadow: 0 4px 12px rgba(0,0,0,0.25);
+  transition: all 0.28s ease;
+  text-align: center;
+  /* Animated gradient for ALL buttons */
+  background: linear-gradient(90deg, lab(8.2% -5.59 2.72), hsl(202, 65%, 68%), oklch(51.482% 0.00986 145.707));
+  background-size: 200% 200%;
+  animation: gradient-move 25s ease infinite;
+  opacity: 0.75;   /* 0.0 = invisible, 1.0 = fully opaque */
+
+  transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+
+
+
+body {
+  text-align: center;
+  line-height: 1.5;
+  margin: 0;
+  padding: 20px;
+  padding-top: 20px;
+  max-width: 480px;
+  align-items: center;
+  margin-left: auto;
+  margin-right: auto;
+  min-height: 100vh;
+  background: hsl(46, 86%, 14%);
+  font-family: system-ui, sans-serif;
+  color: hsl(113, 44%, 21%);
+  background-image: url(../pics/waterfall.jpg);
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+button {
+  display: block;
+  width: 100%;
+  padding: 14px 20px;
+  margin: 10px 0;
+  font-size: 1.1rem;
+  font-weight: 600;
+  align-items: center;
+  cursor: pointer;
+  border: none;
+  border-radius: 4px;
+  color: hwb(60 89% 5%);
+  text-shadow: 0 1px 3px rgba(0,0,0,0.6);
+  box-shadow: 0 4px 12px rgba(0,0,0,0.25);
+  transition: all 0.28s ease;
+
+  /* Animated gradient for ALL buttons */
+  background: linear-gradient(90deg, lab(8.2% -5.59 2.72), hwb(202 6% 67%), oklch(51.482% 0.00986 145.707));
+  background-size: 200% 200%;
+  animation: gradient-move 25s ease infinite;
+  opacity: 0.65;   /* 0.0 = invisible, 1.0 = fully opaque */
+
+  transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+.button:hover,
+.button:focus-visible {
+  transform: translateY(-4px) scale(1.04);
+  box-shadow: 0 12px 32px rgba(236, 72, 153, 0.55);
+  background-position: right center;
+  opacity: 1.0;    /* become fully opaque on hover */
+  transform: translateY(-4px) scale(1.04);
+}
+
+.button:active {
+  transform: translateY(-1px);
+  box-shadow: 0 4px 16px rgba(168, 85, 247, 0.45);
+}
+
+.sub-category.open {
+  display: block;
+  width: 80%;
+  padding: 14px 20px;
+  margin: 8px 0px 10px 65px;
+  font-size: 1.1rem;
+  font-weight: 600;
+  cursor: pointer;
+  border: none;
+  border-radius: 12px;
+  color: hwb(60 89% 5%);
+  text-shadow: 0 1px 3px rgba(0,0,0,0.6);
+  box-shadow: 0 4px 12px rgba(0,0,0,0.25);
+  transition: all 0.28s ease;
+  background: linear-gradient(90deg, oklch(33.746% 0.1051 143.343), hwb(147 8% 57%), hsl(202, 69%, 41%));
+  background-size: 200% 200%;
+  animation: gradient-move 20s ease infinite;
+  opacity: 0.65;   /* 0.0 = invisible, 1.0 = fully opaque */
+  transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+
+
+/* Optional: even more indent when under sub-category */
+.sub-category + .word,
+.sub-category.open ~ .word {
+  display: block;
+  width: 80%;
+  padding: 14px 20px;
+  margin: 8px 0px 10px 65px;
+  font-size: 1.1rem;
+  font-weight: 600;
+  cursor: pointer;
+  border: none;
+  border-radius: 12px;
+  color: hwb(60 89% 5%);
+  text-shadow: 0 1px 3px rgba(0,0,0,0.6);
+  box-shadow: 0 4px 12px rgba(0,0,0,0.25);
+  transition: all 0.28s ease;
+  background: linear-gradient(90deg, lab(8.2% -5.59 2.72), hsl(202, 68%, 31%), rgb(59, 87, 59));
+  background-size: 200% 200%;
+  animation: gradient-move 7s ease infinite;
+  opacity: 0.65;   /* 0.0 = invisible, 1.0 = fully opaque */
+  transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+.sub-category {
+  display: block;
+  width: 80%;
+  margin: 8px 0px 10px 65px;
+  font-size: 1.1rem;
+  font-weight: 600;
+  cursor: pointer;
+  border: none;
+  border-radius: 12px;
+  color: hwb(60 89% 5%);
+  text-shadow: 0 1px 3px rgba(0,0,0,0.6);
+  box-shadow: 0 4px 12px rgba(0,0,0,0.25);
+  transition: all 0.28s ease;
+  background: linear-gradient(90deg, lab(8.2% -5.59 2.72), hsl(202, 68%, 31%), rgb(59, 87, 59));
+  background-size: 200% 200%;
+  animation: gradient-move 7s ease infinite;
+  opacity: 0.65;   /* 0.0 = invisible, 1.0 = fully opaque */
+  transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+
+
+
+.category.open   {
+  background: #218838;
+}
+
+.main-group {
+  display: block;
+  width: 100%;
+  padding: 18px 20px;
+  margin: 10px 0;
+  font-size: 1.35rem;
+  font-weight: 600;
+  cursor: pointer;
+  border: none;
+  border-radius: 12px;
+  color: hwb(60 89% 5%);
+  text-shadow: 0 1px 3px rgba(0,0,0,0.6);
+  box-shadow: 0 4px 12px rgba(0,0,0,0.25);
+  transition: all 0.28s ease;
+  background: linear-gradient(90deg, lab(8.2% -5.59 2.72), hsl(202, 68%, 31%), oklch(51.482% 0.00986 145.707));
+  background-size: 200% 200%;
+  animation: gradient-move 25s ease infinite;
+  opacity: 0.65;   /* 0.0 = invisible, 1.0 = fully opaque */
+  transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+.main-group.open {
+  display: block;
+  width: 100%;
+  padding: 18px 20px;
+  margin: 10px 0;
+  font-size: 1.35rem;
+  font-weight: 600;
+  cursor: pointer;
+  border: none;
+  border-radius: 12px;
+  color: hwb(60 89% 5%);
+  text-shadow: 0 1px 3px rgba(0,0,0,0.6);
+  box-shadow: 0 4px 12px rgba(0,0,0,0.25);
+  transition: all 0.28s ease;
+  background: linear-gradient(90deg, lab(8.2% -5.59 2.72), hsl(202, 68%, 31%), oklch(51.482% 0.00986 145.707));
+  background-size: 200% 200%;
+  animation: gradient-move 25s ease infinite;
+  opacity: 0.65;   /* 0.0 = invisible, 1.0 = fully opaque */
+  transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+.category {
+  display: block;
+  width: 90%;
+  padding: 14px 20px;
+  margin: 8px 0px 10px 32px;
+  font-size: 1.25rem;
+  font-weight: 600;
+  cursor: pointer;
+  border: none;
+  border-radius: 16px;
+  color: hwb(60 89% 5%);
+  text-shadow: 0 1px 3px rgba(0,0,0,0.6);
+  box-shadow: 0 4px 12px rgba(0,0,0,0.25);
+  transition: all 0.28s ease;
+  background: linear-gradient(90deg, rgb(102, 126, 160), hsl(202, 68%, 31%), hwb(204 4% 68%));
+  background-size: 200% 200%;
+  animation: gradient-move 4s ease infinite;
+  opacity: 0.65;   /* 0.0 = invisible, 1.0 = fully opaque */
+  transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+.category.open {
+  display: block;
+  width: 90%;
+  padding: 14px 20px;
+  margin: 8px 0px 10px 32px;
+  font-size: 1.25rem;
+  font-weight: 600;
+  cursor: pointer;
+  border: none;
+  border-radius: 12px;
+  color: hwb(60 89% 5%);
+  text-shadow: 0 1px 3px rgba(0,0,0,0.6);
+  box-shadow: 0 4px 12px rgba(0,0,0,0.25);
+  transition: all 0.28s ease;
+  background: linear-gradient(90deg, oklch(33.746% 0.1051 143.343), hwb(147 8% 57%), hsl(202, 69%, 41%));
+  background-size: 200% 200%;
+  animation: gradient-move 20s ease infinite;
+  opacity: 0.65;   /* 0.0 = invisible, 1.0 = fully opaque */
+  transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+.word {
+ 
+  color: #212529;
+  
+  padding: 10px 14px;
+  border-radius: 6px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border: 1px solid #e2e6ea;
+  margin-left: 60px !important;   /* base indent */
+  text-shadow: 0 1px 3px rgba(0,0,0,0.6);
+  box-shadow: 0 4px 12px rgba(0,0,0,0.25);
+  transition: all 0.28s ease;
+  background: linear-gradient(90deg, lab(8.2% -5.59 2.72), hsl(202, 68%, 31%), oklch(51.482% 0.00986 145.707));
+  background-size: 200% 200%;
+  animation: gradient-move 7s ease infinite;
+  opacity: 0.65;   /* 0.0 = invisible, 1.0 = fully opaque */
+  transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+.dutch {
+  flex: 1;
+  font-weight: 500;
+  width: 45%;                /* or flex: 1; */
+  text-align: left;
+}
+
+.bahasa {
+  font-weight: 600;
+  margin-left: 16px;
+  width: 45%;                /* same width */
+  text-align: right;
+}
+
+.clicked {
+  background: hsl(241, 77%, 26%) !important;
+  border-color: hwb(234 7% 47%);
+}
+
+/* Floating button – side position, movable */
+.to-top-btn {
+  position: fixed;
+  z-index: 9999;
+  width: 56px;
+  height: 56px;
+  border-radius: 50%;
+  background: #dc3545;
+  color: white;
+  font-size: 1.5rem;
+  font-weight: bold;
+  border: none;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.25);
+  cursor: grab;
+  transition: all 0.2s ease;
+  user-select: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.to-top-btn:active {
+  cursor: grabbing;
+  transform: scale(1.05);
+}
+
+.to-top-btn:hover:not(:active) {
+  background: #c82333;
+}
+
+/* Alles inklappen button */
+.collapse-all-btn {
+  position: fixed;
+  top: 40px;
+  right: 10px;                /* next to the "↑ Top" button */
+  z-index: 9998;
+  width: 156px;
+  height: 30px;
+  background: #e67e22;        /* orange for visibility */
+  color: white;
+  font-size: 0.95rem;
+  padding: 8px 16px;
+  border: none;
+  border-radius: 6px;
+  box-shadow: 0 3px 8px rgba(0,0,0,0.25);
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.collapse-all-btn:hover {
+  background: #d35400;
+}
+
+.collapse-all-btn:active {
+  transform: scale(0.98);
+}
+
+.knop1 {
+  display: inline-block;
+  
+  padding: 14px 20px;
+  margin: 10px 10px 10px 25px;
+  font-size: 2rem;
+  font-weight: 600;
+  cursor: pointer;
+  border: none;
+  border-radius: 12px;
+  color: #241b1b;
+  text-shadow: 0 1px 3px rgba(0,0,0,0.6);
+  box-shadow: 0 4px 12px rgba(0,0,0,0.25);
+  transition: all 0.28s ease;
+
+  /* Animated gradient for ALL buttons */
+  background: linear-gradient(90deg, lab(8.2% -5.59 2.72), #2489c4, oklch(51.482% 0.00986 145.707));
+  background-size: 200% 200%;
+  animation: gradient-move 25s ease infinite;
+  opacity: 0.75;   /* 0.0 = invisible, 1.0 = fully opaque */
+
+  transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+.knop1:hover,
+.knop1:focus-visible {
+  transform: translateY(-4px) scale(1.04);
+  box-shadow: 0 12px 32px rgba(236, 72, 153, 0.55);
+  background-position: right center;
+  opacity: 1.0;    /* become fully opaque on hover */
+  transform: translateY(-4px) scale(1.04);
+}
+
+.knop1:active {
+  transform: translateY(-1px);
+  box-shadow: 0 4px 16px rgba(168, 85, 247, 0.45);
+}
+
+.knop2 {
+  display: inline-block;
+  
+  padding: 14px 20px;
+  margin: 10p;
+  font-size: 2rem;
+  font-weight: 600;
+  cursor: pointer;
+  border: none;
+  border-radius: 12px;
+  color: #241b1b;
+  text-shadow: 0 1px 3px rgba(0,0,0,0.6);
+  box-shadow: 0 4px 12px rgba(0,0,0,0.25);
+  transition: all 0.28s ease;
+
+  /* Animated gradient for ALL buttons */
+  background: linear-gradient(90deg, lab(8.2% -5.59 2.72), hsl(202, 52%, 43%), oklch(51.482% 0.00986 145.707));
+  background-size: 200% 200%;
+  animation: gradient-move 17s ease infinite;
+  opacity: 0.75;   /* 0.0 = invisible, 1.0 = fully opaque */
+
+  transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+.knop2:hover,
+.knop2:focus-visible {
+  transform: translateY(-4px) scale(1.04);
+  box-shadow: 0 12px 32px rgba(236, 72, 153, 0.55);
+  background-position: right center;
+  opacity: 1.0;    /* become fully opaque on hover */
+  transform: translateY(-4px) scale(1.04);
+}
+
+.knop2:active {
+  transform: translateY(-1px);
+  box-shadow: 0 4px 16px rgba(168, 85, 247, 0.45);
+}
+
+.knop3 {
+  display: inline-block;
+  
+  padding: 14px 20px;
+  margin: 10px;
+  font-size: 2rem;
+  font-weight: 600;
+  cursor: pointer;
+  border: none;
+  border-radius: 12px;
+  color: #241b1b;
+  text-shadow: 0 1px 3px rgba(0,0,0,0.6);
+  box-shadow: 0 4px 12px rgba(0,0,0,0.25);
+  transition: all 0.28s ease;
+
+  /* Animated gradient for ALL buttons */
+  background: linear-gradient(90deg, lab(8.2% -5.59 2.72), hsl(202, 68%, 31%), oklch(51.482% 0.00986 145.707));
+  background-size: 200% 200%;
+  animation: gradient-move 14s ease infinite;
+  opacity: 0.75;   /* 0.0 = invisible, 1.0 = fully opaque */
+
+  transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+.knop3:hover,
+.knop3:focus-visible {
+  transform: translateY(-4px) scale(1.04);
+  box-shadow: 0 12px 32px rgba(236, 72, 153, 0.55);
+  background-position: right center;
+  opacity: 1.0;    /* become fully opaque on hover */
+  transform: translateY(-4px) scale(1.04);
+}
+
+.knop3:active {
+  transform: translateY(-1px);
+  box-shadow: 0 4px 16px rgba(168, 85, 247, 0.45);
+}
+
+@keyframes gradient-move {
+  0%   { background-position: 0% 50%; }
+  50%  { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+.fold-sub-list-btn {
+  margin-top: 16px;
+  margin-bottom: 24px;
+  background: #444;
+  color: #eee;
+  font-size: 0.95rem;
+  padding: 4px 4px;
+  border-radius: 12px;
+  opacity: 0.85;
+  /* or any other style you want */
+}
+
+.fold-sub-list-btn:hover {
+  opacity: 1;
+  background: #555;
+}
