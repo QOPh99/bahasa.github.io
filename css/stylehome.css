@@ -14,7 +14,28 @@ a {
   text-shadow: 0 1px 3px rgba(0,0,0,0.6);
   box-shadow: 0 4px 12px rgba(0,0,0,0.25);
   transition: all 0.28s ease;
-  background: linear-gradient(90deg, hsl(100, 6%, 46%), lch(68.64% 5.8 14.43), lab(34.89% -2.28 2.5));
+  background: linear-gradient(90deg, hwb(0 100% 0%), lch(55.36% 27.5 337.92), hwb(340 6% 87%));
+  background-size: 200% 200%;
+  animation: gradient-move 4s ease infinite;
+  opacity: 0.75;   /* 0.0 = invisible, 1.0 = fully opaque */
+  transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+p {
+  text-decoration: none;
+  display: inline-block;
+  padding: 4px 40px;
+  margin: 1px;
+  font-size: 1.4rem;
+  font-weight: 600;
+  cursor: pointer;
+  border: none;
+  border-radius: 12px;
+  color: hsl(0, 11%, 15%);
+  text-shadow: 0 1px 3px rgba(0,0,0,0.6);
+  box-shadow: 0 4px 12px rgba(0,0,0,0.25);
+  transition: all 0.28s ease;
+  background: linear-gradient(90deg, hwb(0 100% 0%), lch(55.36% 27.5 337.92), hwb(340 6% 87%));
   background-size: 200% 200%;
   animation: gradient-move 4s ease infinite;
   opacity: 0.75;   /* 0.0 = invisible, 1.0 = fully opaque */
@@ -36,7 +57,7 @@ a {
   text-shadow: 0 1px 3px rgba(0,0,0,0.6);
   box-shadow: 0 4px 12px rgba(0,0,0,0.25);
   transition: all 0.28s ease;
-  background: linear-gradient(90deg, hsl(100, 6%, 46%), lch(68.64% 5.8 14.43), lab(34.89% -2.28 2.5));
+  background: linear-gradient(90deg, hsl(100, 6%, 46%), oklab(70.25% -0.05735 0.13372), lab(34.89% -2.28 2.5));
   background-size: 200% 200%;
   animation: gradient-move 4s ease infinite;
   opacity: 0.75;   /* 0.0 = invisible, 1.0 = fully opaque */
@@ -59,7 +80,7 @@ a {
 
 .knop2 {
   display: inline-block;
-  padding: 14px 80px;
+  padding: 11px 80px;
   margin: 2px 0;
   font-size: 2.2rem;
   font-weight: 600;
@@ -70,7 +91,7 @@ a {
   text-shadow: 0 1px 3px rgba(0,0,0,0.6);
   box-shadow: 0 4px 12px rgba(0,0,0,0.25);
   transition: all 0.28s ease;
-  background: linear-gradient(90deg, hsl(100, 6%, 46%), lch(68.64% 5.8 14.43), lab(34.89% -2.28 2.5));
+  background: linear-gradient(90deg, hsl(0, 40%, 84%), oklab(54.974999999999994% 0.1762 0.07449), lch(75.89% 6.8 19.89));
   background-size: 200% 200%;
   animation: gradient-move 4.5s ease infinite;
   opacity: 0.75;   /* 0.0 = invisible, 1.0 = fully opaque */
@@ -104,7 +125,7 @@ a {
   text-shadow: 0 1px 3px rgba(0,0,0,0.6);
   box-shadow: 0 4px 12px rgba(0,0,0,0.25);
   transition: all 0.28s ease;
-  background: linear-gradient(90deg, hsl(100, 6%, 46%), lch(68.64% 5.8 14.43), lab(34.89% -2.28 2.5));
+  background: linear-gradient(90deg, hsl(100, 6%, 46%), oklab(65.60000000000001% -0.04198 -0.10728), lab(34.89% -2.28 2.5));
   background-size: 200% 200%;
   animation: gradient-move 5s ease infinite;
   opacity: 0.75;   /* 0.0 = invisible, 1.0 = fully opaque */
@@ -138,7 +159,7 @@ body {
   line-height: 1.5;
   margin: 0;
   padding: 20px;
-  padding-top: 100px;
+  padding-top: 30px;
   max-width: 480px;
   margin-left: auto;
   margin-right: auto;
