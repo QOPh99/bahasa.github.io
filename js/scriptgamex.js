@@ -121,6 +121,7 @@ function openSubMenu(catKey, key) { /* catKey is category name */
   knop2.classList.remove("hidden");
   knop3.classList.remove("hidden");
   knop6.classList.remove("hidden");
+
   currentCategory = catKey;
   
   title.textContent = catKey.charAt(0).toUpperCase() + catKey.slice(1);
@@ -216,98 +217,105 @@ function startGame(subKey, pairs, key) {
   }
 
   function showNext() {
-    header.classList.add("hidden");
-    knop1.classList.add("hidden");
-    knop2.classList.add("hidden");
-    knop3.classList.add("hidden");
-    knop6.classList.add("hidden");
-    if (index >= list.length) {
-      const perc = list.length ? Math.round((score / list.length) * 100) : 0;
-      container.classList.remove("hidden");
-      gameArea.innerHTML =`
-      
-        <div class="end-screen">
-          <div class="end-message">${praise[Math.floor(Math.random()*praise.length)]}</div>
-          <div>
-            Score: <b>${score} / ${list.length}</b><br>
-            (${perc}%) • Fouten: ${wrongs}
-          </div>
-          <button class="button gradient" style="margin-top:2rem;">Terug naar ${currentCategory}</button>
+  header.classList.add("hidden");
+  knop1.classList.add("hidden");
+  knop2.classList.add("hidden");
+  knop3.classList.add("hidden");
+  knop6.classList.add("hidden");
+  if (index >= list.length) {
+    const perc = list.length ? Math.round((score / list.length) * 100) : 0;
+    container.classList.remove("hidden");
+    gameArea.innerHTML = `
+      <div class="end-screen">
+        <div class="end-message">${praise[Math.floor(Math.random()*praise.length)]}</div>
+        <div>
+          Score: <b>${score} / ${list.length}</b><br>
+          (${perc}%) • Fouten: ${wrongs}
         </div>
-      `;
-      gameArea.querySelector("button").onclick = () => openSubMenu(currentCategory, current);
-      
-      return;
-    }
-
-    feedbackEl.textContent = "";
-    const [dutch, correct] = list[index];
-    wordEl.textContent = dutch;
-    
-    const wrongsOpts = [];
-    while (wrongsOpts.length < 3) {
-      const rand = list[Math.floor(Math.random() * list.length)][1];
-      if (rand !== correct && !wrongsOpts.includes(rand)) wrongsOpts.push(rand);
-    }
-
-    const choices = [correct, ...wrongsOpts];
-    choices.sort(() => Math.random() - 0.5);
-
-    optsDiv.innerHTML = "";
-    choices.forEach(text => {
-      const b = document.createElement("button");
-      b.className = "button gradient";
-      b.textContent = text;
-      b.onclick = () => {
-        optsDiv.querySelectorAll("button").forEach(btn => btn.disabled = true);
-
-        if (text === correct) {
-          feedbackEl.textContent = "✓ Correct!";
-          feedbackEl.style.color = "#aaffaa";
-          score++;
-          index++;
-          updateScore();
-          setTimeout(() => {
-            feedbackEl.textContent = "";
-            showNext();
-          }, 900);
-        } else {
-  wrongs++;
-  score = Math.max(0, score - 1);
-  updateScore();
-
-  scoreEl.style.display = "none";
-  wordEl.style.display = "none";
-  optsDiv.style.display = "none";
-  exitBtn.style.display = "none";
-  feedbackEl.textContent = "";
-
-  const reviewDiv = document.createElement("div");
-  reviewDiv.className = "wrong-review";
-  reviewDiv.innerHTML = `
-    <div class="wrong-title">🙏🤦‍♀️</div>
-    <div class="dutch-word">${dutch}</div>
-    <div class="correct-word">${correct}</div>
-    <button class="button gradient continue-btn">1 woord terug</button>
-  `;
-  gameArea.appendChild(reviewDiv);
-
-  reviewDiv.querySelector(".continue-btn").onclick = () => {
-    reviewDiv.remove();
-    
-    scoreEl.style.display = "block";
-    wordEl.style.display = "block";
-    optsDiv.style.display = "block";
-    exitBtn.style.display = "block";
-
-    if (index > 0) index--;
-    showNext();
-  };
-}
-      };
-      optsDiv.appendChild(b);
-    });
+        <button class="button gradient" style="margin-top:2rem;">Terug naar ${currentCategory}</button>
+      </div>
+    `;
+    gameArea.querySelector("button").onclick = () => openSubMenu(currentCategory, current);
+    return;
   }
+
+  feedbackEl.textContent = "";
+  const [dutch, correct] = list[index];
+  wordEl.textContent = dutch;
+
+  // ─── Collect ALL Indonesian words once ───────────────────────────────
+  const allIndonesianWords = [];
+  Object.values(wordLists).forEach(subList => {
+    subList.forEach(([d, i]) => {
+      allIndonesianWords.push(i);
+    });
+  });
+  const uniqueWords = [...new Set(allIndonesianWords)];
+
+  // Pick 3 different wrong answers from the whole pool
+  const wrongsOpts = [];
+  while (wrongsOpts.length < 3) {
+    const randWord = uniqueWords[Math.floor(Math.random() * uniqueWords.length)];
+    if (randWord !== correct && !wrongsOpts.includes(randWord)) {
+      wrongsOpts.push(randWord);
+    }
+  }
+
+  const choices = [correct, ...wrongsOpts];
+  choices.sort(() => Math.random() - 0.5);
+
+  optsDiv.innerHTML = "";
+  choices.forEach(text => {
+    const b = document.createElement("button");
+    b.className = "button gradient";
+    b.textContent = text;
+    b.onclick = () => {
+      // ... (rest of the click handler stays exactly the same)
+      optsDiv.querySelectorAll("button").forEach(btn => btn.disabled = true);
+      if (text === correct) {
+        feedbackEl.textContent = "✓ Correct!";
+        feedbackEl.style.color = "#aaffaa";
+        score++;
+        index++;
+        updateScore();
+        setTimeout(() => {
+          feedbackEl.textContent = "";
+          showNext();
+        }, 900);
+      } else {
+        wrongs++;
+        score = Math.max(0, score - 1);
+        updateScore();
+        scoreEl.style.display = "none";
+        wordEl.style.display = "none";
+        optsDiv.style.display = "none";
+        exitBtn.style.display = "none";
+        feedbackEl.textContent = "";
+
+        const reviewDiv = document.createElement("div");
+        reviewDiv.className = "wrong-review";
+        reviewDiv.innerHTML = `
+          <div class="wrong-title">🙏🤦‍♀️</div>
+          <div class="dutch-word">${dutch}</div>
+          <div class="correct-word">${correct}</div>
+          <button class="button gradient continue-btn">1 woord terug</button>
+        `;
+        gameArea.appendChild(reviewDiv);
+
+        reviewDiv.querySelector(".continue-btn").onclick = () => {
+          reviewDiv.remove();
+          scoreEl.style.display = "block";
+          wordEl.style.display = "block";
+          optsDiv.style.display = "block";
+          exitBtn.style.display = "block";
+          if (index > 0) index--;
+          showNext();
+        };
+      }
+    };
+    optsDiv.appendChild(b);
+  });
+}
 
   updateScore();
   showNext();
