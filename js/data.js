@@ -3,9 +3,9 @@ const sharedData = {
 
 
   groupz: {
-    "Makkelijk": "cijfers kleuren",
+    "Algemeen": "cijfers kleuren",
     "Mens & Gezondheid": "leven medisch",
-    "Natuur & Milieu": "dieren planten weer steen metalen",
+    "Natuur & Milieu": "dieren planten weer stenen metalen",
     "Eten & Drinken": "eten snoep smaken",
     "Vrije Tijd & Lifestyle": "relaxen sport hobby muziek uitgaan kleren",
     "Reizen & Vervoer": "reizen verkeer auto space",
@@ -16,7 +16,7 @@ const sharedData = {
   categories: {
             "cijfers": "1_tot_10 grote_cijfers wiskunde",
             "kleuren": "normaal",
-            "leven": "mensen familie meerfamilie straat",
+            "leven": "mensen familie familieleden straat",
             "dieren": "fauna vogels vissen zee_creaturen insecten",
             "planten": "planten bomen groente fruit kruiden specerijen",
             "eten": "smaken keuken restaurant dinner ontbijt toetjes snoep",
@@ -29,7 +29,7 @@ const sharedData = {
             "uitgaan": "winkelen mall toko warung restaurant clubbing concert kroeg",
             "medisch": "personen gebouw symptomen klachten lichaamsdelen medicijnen",
             "reizen": "vliegveld ov station",
-            "verkeer": "fiets auto voetganger vvmiddel route regels",
+            "verkeer": "fiets autos voetganger vvmiddel route regels",
             "geld": "betaal_pin betaal_cash rekening crypto",
             "hobby": "speelgoed e-games board-games",
             "muziek": "luisteren instrumenten audio hifi",
@@ -77,7 +77,7 @@ const sharedData = {
     ["neef", "sepupu laki-laki / keponakan laki-laki"],
     ["nicht", "sepupu perempuan / keponakan perempuan"]
 ],
-"meerfamilie": [
+"familieleden": [
     ["grootvader", "kakek / eyang kakung"],
     ["grootmoeder", "nenek / eyang putri"],
     ["kleinzoon", "cucu laki-laki"],
@@ -687,7 +687,7 @@ const sharedData = {
                 ["fietslamp", "lampu sepeda"],
                 ["zadel", "sadel"]
             ],
-            "auto": [
+            "autos": [
                 ["auto", "mobil"],
                 ["rijden", "mengemudi"],
                 ["chauffeur", "sopir"],
