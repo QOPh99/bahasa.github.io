@@ -25,7 +25,7 @@ p {
   text-decoration: none;
   display: inline-block;
   padding: 4px 40px;
-  margin: 30px;
+  margin: 30px 15px 7px 15px;
   font-size: 1.4rem;
   font-weight: 600;
   cursor: pointer;
@@ -57,9 +57,9 @@ p {
   text-shadow: 0 1px 3px rgba(0,0,0,0.6);
   box-shadow: 0 4px 12px rgba(0,0,0,0.25);
   transition: all 0.28s ease;
-  background: linear-gradient(90deg, hsl(100, 6%, 46%), oklab(70.25% -0.05735 0.13372), lab(34.89% -2.28 2.5));
+  background: linear-gradient(90deg, hsl(100, 6%, 46%), oklch(74.179% 0.14943 102.462), lab(34.89% -2.28 2.5));
   background-size: 200% 200%;
-  animation: gradient-move 4s ease infinite;
+  animation: gradient-move 11s ease infinite;
   opacity: 0.75;   /* 0.0 = invisible, 1.0 = fully opaque */
   transition: opacity 0.3s ease, transform 0.3s ease;
 }
@@ -93,7 +93,7 @@ p {
   transition: all 0.28s ease;
   background: linear-gradient(90deg, hsl(0, 40%, 84%), oklab(54.974999999999994% 0.1762 0.07449), lch(75.89% 6.8 19.89));
   background-size: 200% 200%;
-  animation: gradient-move 4.5s ease infinite;
+  animation: gradient-move 17s ease infinite;
   opacity: 0.75;   /* 0.0 = invisible, 1.0 = fully opaque */
   transition: opacity 0.3s ease, transform 0.3s ease;
 }
