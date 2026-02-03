@@ -45,9 +45,9 @@ a {
 .knop2 {
   display: inline-block;
   
-  padding: 14px 40px;
-  margin: 30px 0;
-  font-size: 1.5rem;
+  padding: 11px 5px;
+  margin: 10px 0;
+  font-size: 2.2rem;
   font-weight: 600;
   cursor: pointer;
   border: none;
@@ -58,10 +58,10 @@ a {
   transition: all 0.28s ease;
 
   /* Animated gradient for ALL buttons */
-  background: linear-gradient(90deg, hsl(103, 6%, 25%), lch(61.89% 0.96 343.41), hwb(340 6% 87%));
+  background: linear-gradient(90deg, hsl(100, 2%, 25%), oklab(58.23500000000001% 0.20326 0.11045), lab(100% 0.01 -0.01));
   background-size: 200% 200%;
   animation: gradient-move 30s ease infinite;
-  opacity: 0.75;   /* 0.0 = invisible, 1.0 = fully opaque */
+  opacity: 0.6;   /* 0.0 = invisible, 1.0 = fully opaque */
 
   transition: opacity 0.3s ease, transform 0.3s ease;
 }
@@ -90,13 +90,13 @@ a {
   cursor: pointer;
   border: none;
   border-radius: 12px;
-  color: lch(94.2% 2.76 87.12);
-  text-shadow: 0 1px 3px rgba(0,0,0,0.6);
+  color: oklab(12.798000000000002% -0.00081 0.00268);
+  text-shadow: 0 1px 3px #f8a30499;
   box-shadow: 0 4px 12px rgba(0,0,0,0.25);
   transition: all 0.28s ease;
 
   /* Animated gradient for ALL buttons */
-  background: linear-gradient(90deg, hsl(103, 6%, 25%), lch(61.89% 0.96 343.41), hwb(340 6% 87%));
+  background: linear-gradient(90deg, oklab(90.127% -0.00328 -0.00819), rgb(230, 202, 213), oklch(93.318% 0.00391 106.894));
   background-size: 200% 200%;
   animation: gradient-move 20s ease infinite;
   opacity: 0.75;   /* 0.0 = invisible, 1.0 = fully opaque */
@@ -121,9 +121,9 @@ a {
 .knopgotogame {
   display: inline-block;
   
-  padding: 10px 40px;
+  padding: 4px 40px;
   margin: 0px;
-  font-size: 0.9rem;
+  font-size: 1.2rem;
   font-weight: 600;
   cursor: pointer;
   border: none;
@@ -134,10 +134,10 @@ a {
   transition: all 0.28s ease;
 
   /* Animated gradient for ALL buttons */
-  background: linear-gradient(90deg, hsl(103, 6%, 25%), rgb(226, 222, 217), #cf0202);
+  background: linear-gradient(90deg, lab(44.4% -7.76 48.32), hsl(64, 94%, 48%), hsl(0, 0%, 100%));
   background-size: 200% 200%;
   animation: gradient-move 10s ease infinite;
-  opacity: 0.75;   /* 0.0 = invisible, 1.0 = fully opaque */
+  opacity: 0.6;   /* 0.0 = invisible, 1.0 = fully opaque */
 
   transition: opacity 0.3s ease, transform 0.3s ease;
 }
@@ -159,9 +159,9 @@ a {
 .knopgotolexicon {
   display: inline-block;
   
-  padding: 10px 40px;
+  padding: 4px 40px;
   margin: 0px 0px;
-  font-size: 0.9rem;
+  font-size: 1.2rem;
   font-weight: 600;
   cursor: pointer;
   border: none;
@@ -172,10 +172,10 @@ a {
   transition: all 0.28s ease;
 
   /* Animated gradient for ALL buttons */
-  background: linear-gradient(90deg, hsl(103, 6%, 25%), rgb(226, 222, 217), #cf0202);
+  background: linear-gradient(90deg, hwb(204 5% 12%), rgb(226, 222, 217), hsl(236, 88%, 34%));
   background-size: 200% 200%;
   animation: gradient-move 7s ease infinite;
-  opacity: 0.75;   /* 0.0 = invisible, 1.0 = fully opaque */
+  opacity: 0.6;   /* 0.0 = invisible, 1.0 = fully opaque */
 
   transition: opacity 0.3s ease, transform 0.3s ease;
 }
@@ -197,8 +197,8 @@ a {
 .knopterug {
   display: inline-block;
   
-  padding: 14px 5px;
-  margin: 30px 10px;
+  padding: 14px 20px;
+  margin: 2px 10px;
   font-size: 2rem;
   font-weight: 600;
   cursor: pointer;

@@ -6,8 +6,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
 const praise = [
   "Mantap!",
-  "Keren!",
-  "Jij kunt dit!", 
+  "Keren!", 
   "Selamat ya! Kamu hebat!",
   "Luar biasa! Kerja bagus!",
   "Bagus sekali! Mantap!",
