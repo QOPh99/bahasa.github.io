@@ -26,10 +26,10 @@
   transition: all 0.28s ease;
 
   /* Animated gradient for ALL buttons */
-  background: linear-gradient(90deg, hwb(0 100% 0%), lch(55.36% 27.5 337.92), hwb(340 6% 87%));
+  background: linear-gradient(90deg, lab(70.17% -0.86 69.88), oklab(63.175000000000004% -0.02525 0.11207), lab(71.82% -15.45 46.56));
   background-size: 200% 200%;
   animation: gradient-move 20s ease infinite;
-  opacity: 0.75;   /* 0.0 = invisible, 1.0 = fully opaque */
+  opacity: 0.6;   /* 0.0 = invisible, 1.0 = fully opaque */
 
   transition: opacity 0.3s ease, transform 0.3s ease;
 }
