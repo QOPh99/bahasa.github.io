@@ -14,7 +14,7 @@
   display: inline-block;
   width: 100%;
   padding: 1px 20px;
-  margin: 4px 0px 8px 0px;
+  margin: 4px 0px 0px 0px;
   font-size: 2rem;
   font-weight: 600;
   cursor: pointer;
@@ -41,7 +41,7 @@
   display: inline-block;
   
   padding: 14px 20px;
-  margin: 1px;
+  margin: 8px;
   font-size: 2rem;
   font-weight: 600;
   cursor: pointer;
@@ -79,7 +79,7 @@
   display: inline-block;
   
   padding: 14px 20px;
-  margin: 1px;
+  margin: 8px;
   font-size: 2rem;
   font-weight: 600;
   cursor: pointer;
@@ -238,7 +238,7 @@ a {
   width: 100%;
   padding: 10px 20px;
   margin: 10px 0;
-  font-size: 1.5rem;
+  font-size: 1.3rem;
   font-weight: 600;
   cursor: pointer;
   border: none;
@@ -309,17 +309,12 @@ a {
   box-shadow: 0 4px 16px rgba(168, 85, 247, 0.45);
 }
 
-/* Animation keyframes */
-@keyframes gradient-move {
-  0%   { background-position: 0% 50%; }
-  50%  { background-position: 100% 50%; }
-  100% { background-position: 0% 50%; }
-}
+
 
 /* Hierarchy / level styles – works with any JSON structure */
 .main-category {
   font-size: 1.35rem;
-  font-weight: 700;
+  font-weight: 600;
   letter-spacing: 0.8px;
   padding: 16px 24px;
 }
@@ -463,5 +458,12 @@ a {
   color: hsl(108, 88%, 10%);
   margin: 1rem 0 1.4rem;
   text-align: center;
+}
+
+/* Animation keyframes */
+@keyframes gradient-move {
+  0%   { background-position: 0% 50%; }
+  50%  { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
 }
 

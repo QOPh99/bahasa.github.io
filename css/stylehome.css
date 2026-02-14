@@ -70,7 +70,7 @@ p {
   justify-content: center;
   align-items: center;
   gap: 2rem;
-  font-size: 1.7rem;
+  font-size: 1.4rem;
   font-weight: 600;
   cursor: pointer;
   border: none;
@@ -124,6 +124,7 @@ p {
   justify-content: center;
   align-items: center;
   gap: 2rem;
+  margin-top: 90px;
   font-size: 1rem;
   font-weight: 600;
   cursor: pointer;
@@ -145,7 +146,7 @@ p {
   rgba(255, 255, 0,    0),   /* pure yellow */
   rgba(255, 215, 0,    0.25),   /* gold */
   rgba(255, 228, 181,  0.5),   /* moccasin */
-  rgba(255, 255, 102,  0.75),   /* bright lemon */
+  rgba(109, 109, 70, 0.75),   /* bright lemon */
   rgba(218, 165, 32,   0.9),   /* goldenrod */
   rgba(255, 250, 205,  0.7),   /* lemon chiffon */
   rgba(189, 183, 107,  0.5)
@@ -176,7 +177,7 @@ p {
   justify-content: center;
   align-items: center;
   gap: 2rem;
-  font-size: 1.7rem;
+  font-size: 1.4rem;
   font-weight: 600;
   cursor: pointer;
   border: none;
@@ -228,7 +229,7 @@ p {
   justify-content: center;
   align-items: center;
   gap: 2rem;
-  font-size: 1.7rem;
+  font-size: 1.4rem;
   font-weight: 600;
   cursor: pointer;
   border: none;
@@ -280,7 +281,7 @@ p {
   justify-content: center;
   align-items: center;
   gap: 2rem;        
-  font-size: 1.7rem;
+  font-size: 1.4rem;
   font-weight: 600;
   cursor: pointer;
   border: none;
@@ -327,28 +328,30 @@ p {
 }
 
 .spin-btn {
-      padding: 1rem 2.5rem;
+      padding: 2rem 2.5rem;
+      margin-bottom: 40px;
       font-size: 1.7rem;
       font-weight: bold;
-      color: white;
+      color: hsl(39, 76%, 37%);
+      text-shadow: 0 1px 3px rgba(0,0,0,0.6);
       background: linear-gradient(
   90deg,
-  rgba(121, 60, 4,  0.3),  /* tomato */
-  rgba(110, 80, 30,   0.6),   /* coral */
-  rgba(121, 60, 30, 0.9),   /* light salmon */
-  rgba(150, 105, 30,   0.7),   /* chocolate */
-  rgba(155, 99, 71,    0.7),   /* tomato */
-  rgba(111, 127, 80,   0.7),   /* coral */
-  rgba(180, 160, 122,  0.6),   /* light salmon */
-  rgba(140, 105, 30,   0.5),  /* chocolate */
-  rgba(150, 99, 71,    0.5),  /* tomato */
-  rgba(145, 127, 80,   0.5),   /* coral */
-  rgba(150, 160, 122,  0.5),   /* light salmon */
-  rgba(150, 105, 30,   0.5),   /* chocolate */
-  rgba(150, 99, 71,    0.5),   /* tomato */
-  rgba(215, 127, 80,   0.5),   /* coral */
-  rgba(155, 160, 122,  0.5),   /* light salmon */
-  rgba(110, 105, 30,   1)   /* chocolate */
+  rgba(14, 59, 80, 0.3),  /* tomato */
+  rgba(24, 131, 173, 0.6),   /* coral */
+  rgba(31, 104, 117, 0.9),   /* light salmon */
+  rgba(25, 104, 124, 0.7),   /* chocolate */
+  rgba(123, 200, 206, 0.7),   /* tomato */
+  rgba(20, 92, 151, 0.7),   /* coral */
+  rgba(122, 149, 180, 0.6),   /* light salmon */
+  rgba(30, 56, 140, 0.5),  /* chocolate */
+  rgba(25, 137, 145, 0.5),  /* tomato */
+  rgba(56, 127, 160, 0.4),   /* coral */
+  rgba(150, 160, 122,  0.3),   /* light salmon */
+  rgba(103, 108, 150, 0.2),   /* chocolate */
+  rgba(66, 137, 218, 0.1),   /* tomato */
+  rgba(215, 127, 80,   0.05),   /* coral */
+  rgba(155, 160, 122,  0.1),   /* light salmon */
+  rgba(110, 105, 30,   0.2)   /* chocolate */
 );
   background-size: 2000% 2000%;
   animation: gradient-move 17s ease infinite;
