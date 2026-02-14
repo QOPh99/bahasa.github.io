@@ -14,7 +14,16 @@ a {
   text-shadow: 0 1px 3px #f7ad0e99;
   box-shadow: 0 4px 12px rgba(0,0,0,0.25);
   transition: all 0.28s ease;
-  background: linear-gradient(90deg, hwb(0 100% 0%), oklab(79.535% 0.03651 -0.01467), lab(68.78% -10.79 60.55));
+  background: linear-gradient(
+  90deg,
+  #C0C0C0, 
+  #C0C0C0,
+  #C0C0C0,
+  hsl(46, 76%, 61%),
+  #C0C0C0,
+  #C0C0C0,
+  #C0C0C0
+);
   background-size: 200% 200%;
   animation: gradient-move 7s ease infinite;
   opacity: 0.65;   /* 0.0 = invisible, 1.0 = fully opaque */
@@ -23,9 +32,11 @@ a {
 
 p {
   text-decoration: none;
-  display: inline-block;
-  padding: 4px 40px;
-  margin: 4px 15px 7px 15px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
   font-size: 1.4rem;
   font-weight: 600;
   cursor: pointer;
@@ -35,7 +46,16 @@ p {
   text-shadow: 0 1px 3px #ffc34299;
   box-shadow: 0 4px 12px rgba(0,0,0,0.25);
   transition: all 0.28s ease;
-  background: linear-gradient(90deg, hwb(0 100% 0%), oklab(72.188% 0.02906 -0.01175), lab(44.58% -42.1 40.51));
+  background: linear-gradient(
+  90deg,
+  #C0C0C0, 
+  #C0C0C0,
+  #C0C0C0,
+  hsl(46, 76%, 61%),
+  #C0C0C0,
+  #C0C0C0,
+  #C0C0C0
+);
   background-size: 200% 200%;
   animation: gradient-move 12s ease infinite;
   opacity: 0.6;   /* 0.0 = invisible, 1.0 = fully opaque */
@@ -45,10 +65,12 @@ p {
 
 
 .knop1 {
-  display: inline-block;
-  padding: 14px 40px;
-  margin: 4px 40px 40px 40px;
-  font-size: 2.2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+  font-size: 1.7rem;
   font-weight: 600;
   cursor: pointer;
   border: none;
@@ -57,10 +79,28 @@ p {
   text-shadow: 0 1px 3px rgba(0,0,0,0.6);
   box-shadow: 0 4px 12px rgba(0,0,0,0.25);
   transition: all 0.28s ease;
-  background: linear-gradient(90deg, hsl(100, 6%, 46%), oklch(74.179% 0.14943 102.462), lab(34.89% -2.28 2.5));
-  background-size: 200% 200%;
-  animation: gradient-move 11s ease infinite;
-  opacity: 0.75;   /* 0.0 = invisible, 1.0 = fully opaque */
+  background: linear-gradient(
+  90deg,
+  rgba(255, 99, 71,    0),  /* tomato */
+  rgba(255, 127, 80,   0),   /* coral */
+  rgba(255, 160, 122,  0),   /* light salmon */
+  rgba(210, 105, 30,   0),   /* chocolate */
+  rgba(255, 99, 71,    0.1),   /* tomato */
+  rgba(255, 127, 80,   0.3),   /* coral */
+  rgba(255, 160, 122,  0.5),   /* light salmon */
+  rgba(210, 105, 30,   0.7),  /* chocolate */
+  rgba(255, 99, 71,    0.7),  /* tomato */
+  rgba(255, 127, 80,   0.7),   /* coral */
+  rgba(255, 160, 122,  0.7),   /* light salmon */
+  rgba(210, 105, 30,   0.7),   /* chocolate */
+  rgba(255, 99, 71,    0.6),   /* tomato */
+  rgba(255, 127, 80,   0.5),   /* coral */
+  rgba(255, 160, 122,  0.5),   /* light salmon */
+  rgba(210, 105, 30,   0.4)   /* chocolate */
+);
+  background-size: 2000% 2000%;
+  animation: gradient-move 33s ease infinite;
+  opacity: 1;   /* 0.0 = invisible, 1.0 = fully opaque */
   transition: opacity 0.3s ease, transform 0.3s ease;
 }
 
@@ -69,7 +109,7 @@ p {
   transform: translateY(-4px) scale(1.04);
   box-shadow: 0 12px 32px rgba(236, 72, 153, 0.55);
   background-position: right center;
-  opacity: 1.0;    /* become fully opaque on hover */
+  opacity: 0.6;    /* become fully opaque on hover */
   transform: translateY(-4px) scale(1.04);
 }
 
@@ -78,11 +118,13 @@ p {
   box-shadow: 0 4px 16px rgba(168, 85, 247, 0.45);
 }
 
-.knop17 {
-  display: inline-block;
-  padding: 14px 40px;
-  margin: 4px 40px 40px 40px;
-  font-size: 2.2rem;
+.knopbedankt {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+  font-size: 1rem;
   font-weight: 600;
   cursor: pointer;
   border: none;
@@ -91,9 +133,77 @@ p {
   text-shadow: 0 1px 3px rgba(0,0,0,0.6);
   box-shadow: 0 4px 12px rgba(0,0,0,0.25);
   transition: all 0.28s ease;
-  background: linear-gradient(90deg, hsl(100, 6%, 46%), oklch(74.179% 0.14943 102.462), lab(34.89% -2.28 2.5));
+  background: linear-gradient(
+  90deg,
+  rgba(255, 255, 0,    0),   /* pure yellow */
+  rgba(255, 215, 0,    0),   /* gold */
+  rgba(255, 228, 181,  0),   /* moccasin */
+  rgba(255, 255, 102,  0),   /* bright lemon */
+  rgba(218, 165, 32,   0),   /* goldenrod */
+  rgba(255, 250, 205,  0),   /* lemon chiffon */
+  rgba(189, 183, 107,  0),
+  rgba(255, 255, 0,    0),   /* pure yellow */
+  rgba(255, 215, 0,    0.25),   /* gold */
+  rgba(255, 228, 181,  0.5),   /* moccasin */
+  rgba(255, 255, 102,  0.75),   /* bright lemon */
+  rgba(218, 165, 32,   0.9),   /* goldenrod */
+  rgba(255, 250, 205,  0.7),   /* lemon chiffon */
+  rgba(189, 183, 107,  0.5)
+);
+  background-size: 3000% 3000%;
+  animation: gradient-move 33s ease infinite;
+  opacity: 1;   /* 0.0 = invisible, 1.0 = fully opaque */
+  transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+.knopbedankt:hover,
+.knopbedankt:active:focus-visible {
+  transform: translateY(-4px) scale(1.04);
+  box-shadow: 0 12px 32px rgba(236, 72, 153, 0.55);
+  background-position: right center;
+  opacity: 0.5;    /* become fully opaque on hover */
+  transform: translateY(-4px) scale(1.04);
+}
+
+.knopbedankt:active {
+  transform: translateY(-1px);
+  box-shadow: 0 4px 16px rgba(168, 85, 247, 0.45);
+}
+
+.knop17 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+  font-size: 1.7rem;
+  font-weight: 600;
+  cursor: pointer;
+  border: none;
+  border-radius: 12px;
+  color: #f0ebeb;
+  text-shadow: 0 1px 3px rgba(0,0,0,0.6);
+  box-shadow: 0 4px 12px rgba(0,0,0,0.25);
+  transition: all 0.28s ease;
+  background: linear-gradient(
+  90deg,
+  rgba(50, 205, 50,   0),   /* lime green */
+  rgba(60, 179, 113,   0),   /* medium sea green */
+  rgba(34, 139, 34,    0),   /* forest green */
+  rgba(124, 252, 0,    0),   /* lawn green */
+  rgba(0, 255, 127,    0),   /* spring green */
+  rgba(144, 238, 144,  0),   /* light green */
+  rgba(46, 139, 87,    0),   /* sea green */
+  rgba(50, 205, 50,   0.1),   /* lime green */
+  rgba(60, 179, 113,   0.3),   /* medium sea green */
+  rgba(34, 139, 34,    0.5),   /* forest green */
+  rgba(124, 252, 0,    0.7),   /* lawn green */
+  rgba(0, 255, 127,    0.6),   /* spring green */
+  rgba(144, 238, 144,  0.7),   /* light green */
+  rgba(46, 139, 87,    0.6)   /* sea green */
+);
   background-size: 200% 200%;
-  animation: gradient-move 11s ease infinite;
+  animation: gradient-move 33s ease infinite;
   opacity: 0.75;   /* 0.0 = invisible, 1.0 = fully opaque */
   transition: opacity 0.3s ease, transform 0.3s ease;
 }
@@ -113,10 +223,12 @@ p {
 }
 
 .knop2 {
-  display: inline-block;
-  padding: 11px 80px;
-  margin: 2px 0;
-  font-size: 2.2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+  font-size: 1.7rem;
   font-weight: 600;
   cursor: pointer;
   border: none;
@@ -125,10 +237,26 @@ p {
   text-shadow: 0 1px 3px rgba(0,0,0,0.6);
   box-shadow: 0 4px 12px rgba(0,0,0,0.25);
   transition: all 0.28s ease;
-  background: linear-gradient(90deg, hsl(0, 40%, 84%), oklab(54.974999999999994% 0.1762 0.07449), lch(75.89% 6.8 19.89));
-  background-size: 200% 200%;
-  animation: gradient-move 17s ease infinite;
-  opacity: 0.75;   /* 0.0 = invisible, 1.0 = fully opaque */
+  background: linear-gradient(
+  135deg,
+  rgba(13, 124, 33, 0.25),   /* dark orange */
+  rgba(124, 104, 13, 0.5),   /* orange */
+  rgba(124, 94, 11, 0.7),  /* orangered */
+  rgba(116, 95, 5, 0.7),   /* tomato */
+  rgba(129, 84, 16, 0.6),   /* coral */
+  rgba(168, 158, 9, 0.5),   /* light salmon */
+  rgba(141, 122, 15, 0.5),   /* chocolate */
+  rgba(146, 126, 12, 0.5),   /* dark orange */
+  rgba(169, 185, 20, 0.5),   /* orange */
+  rgba(170, 160, 15, 0.5),  /* orangered */
+  rgba(179, 176, 21, 0.5),   /* tomato */
+  rgba(214, 202, 34, 0.5),   /* coral */
+  rgba(190, 179, 15, 0.5),   /* light salmon */
+  rgba(183, 124, 33, 0.5)   /* chocolate */
+);
+  background-size: 2000% 2000%;
+  animation: gradient-move 33s ease infinite;
+  opacity: 1;   /* 0.0 = invisible, 1.0 = fully opaque */
   transition: opacity 0.3s ease, transform 0.3s ease;
 }
 
@@ -147,10 +275,12 @@ p {
 }
 
 .knop3 {
-  display: inline-block;
-  padding: 14px 40px;
-  margin: 20px 40px 20px 40px;
-  font-size: 2.2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;        
+  font-size: 1.7rem;
   font-weight: 600;
   cursor: pointer;
   border: none;
@@ -159,9 +289,25 @@ p {
   text-shadow: 0 1px 3px rgba(0,0,0,0.6);
   box-shadow: 0 4px 12px rgba(0,0,0,0.25);
   transition: all 0.28s ease;
-  background: linear-gradient(90deg, hsl(100, 6%, 46%), oklab(65.60000000000001% -0.04198 -0.10728), lab(34.89% -2.28 2.5));
-  background-size: 200% 200%;
-  animation: gradient-move 5s ease infinite;
+  background: linear-gradient(
+  90deg,
+  rgba(0, 191, 255,    0),   /* deep sky blue */
+  rgba(30, 144, 255,   0.25),   /* dodger blue */
+  rgba(0, 199, 238, 0.5),   /* pure blue */
+  rgba(65, 105, 225,   0.7),   /* royal blue */
+  rgba(105, 155, 247, 0.7),   /* cornflower blue */
+  rgba(70, 130, 180,   0.7),   /* steel blue */
+  rgba(0, 206, 209,    0.6),   /* dark turquoise */
+  rgba(0, 191, 255,    0.5),   /* deep sky blue */
+  rgba(30, 144, 255,   0.4),   /* dodger blue */
+  rgba(0, 0, 255,      0.5),   /* pure blue */
+  rgba(65, 105, 225,   0.4),   /* royal blue */
+  rgba(100, 149, 237,  0.5),   /* cornflower blue */
+  rgba(70, 130, 180,   0.6),   /* steel blue */
+  rgba(0, 206, 209,    0.5)   /* dark turquoise */
+);
+  background-size: 2000% 2000%;
+  animation: gradient-move 33s ease infinite;
   opacity: 0.75;   /* 0.0 = invisible, 1.0 = fully opaque */
   transition: opacity 0.3s ease, transform 0.3s ease;
 }
@@ -179,6 +325,74 @@ p {
   transform: translateY(-1px);
   box-shadow: 0 4px 16px rgba(168, 85, 247, 0.45);
 }
+
+.spin-btn {
+      padding: 1rem 2.5rem;
+      font-size: 1.7rem;
+      font-weight: bold;
+      color: white;
+      background: linear-gradient(
+  90deg,
+  rgba(121, 60, 4,  0.3),  /* tomato */
+  rgba(110, 80, 30,   0.6),   /* coral */
+  rgba(121, 60, 30, 0.9),   /* light salmon */
+  rgba(150, 105, 30,   0.7),   /* chocolate */
+  rgba(155, 99, 71,    0.7),   /* tomato */
+  rgba(111, 127, 80,   0.7),   /* coral */
+  rgba(180, 160, 122,  0.6),   /* light salmon */
+  rgba(140, 105, 30,   0.5),  /* chocolate */
+  rgba(150, 99, 71,    0.5),  /* tomato */
+  rgba(145, 127, 80,   0.5),   /* coral */
+  rgba(150, 160, 122,  0.5),   /* light salmon */
+  rgba(150, 105, 30,   0.5),   /* chocolate */
+  rgba(150, 99, 71,    0.5),   /* tomato */
+  rgba(215, 127, 80,   0.5),   /* coral */
+  rgba(155, 160, 122,  0.5),   /* light salmon */
+  rgba(110, 105, 30,   1)   /* chocolate */
+);
+  background-size: 2000% 2000%;
+  animation: gradient-move 30s ease infinite;
+  opacity: 1;   /* 0.0 = invisible, 1.0 = fully opaque */
+  transition: opacity 0.3s ease, transform 0.3s ease;
+      border: none;
+      border-radius: 9999px;        /* pill shape */
+      cursor: pointer;
+      box-shadow: 0 10px 25px rgba(99, 102, 241, 0.4);
+      transition: all 0.3s ease;
+      user-select: none;
+    }
+
+    .spin-btn:hover,
+.spin-btn:focus-visible {
+  transform: translateY(-4px) scale(1.04);
+  box-shadow: 0 12px 32px rgba(236, 72, 153, 0.55);
+  background-position: right center;
+  opacity: 0.4;    /* become fully opaque on hover */
+  transform: translateY(-4px) scale(1.04);
+}
+
+.spin-btn:active {
+  transform: translateY(-1px);
+  box-shadow: 0 4px 16px rgba(168, 85, 247, 0.45);
+}
+
+ 
+
+    /* The spinning class we'll add/remove */
+    .spinning {
+      animation: spin 1s linear forwards;
+      pointer-events: none;           /* optional: prevent multiple clicks during spin */
+      opacity: 0.9;
+    }
+
+    @keyframes spin {
+      from {
+        transform: rotate(0deg);
+      }
+      to {
+        transform: rotate(360deg);
+      }
+    }
 
 
 

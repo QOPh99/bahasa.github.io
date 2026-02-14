@@ -14,13 +14,13 @@ a {
   cursor: pointer;
   border: none;
   border-radius: 12px;
-  color: rgb(240, 237, 233);
+  color: rgb(34, 30, 24);
   text-shadow: 0 1px 3px rgba(0,0,0,0.6);
   box-shadow: 0 4px 12px rgba(0,0,0,0.25);
   transition: all 0.28s ease;
 
   /* Animated gradient for ALL buttons */
-  background: linear-gradient(90deg, hsl(103, 6%, 25%), lch(61.89% 0.96 343.41), hwb(340 6% 87%));
+  background: linear-gradient(90deg, hsl(103, 6%, 25%), lch(61.89% 0.96 343.41), lch(63.83% 37.08 233.71));
   background-size: 200% 200%;
   animation: gradient-move 20s ease infinite;
   opacity: 0.75;   /* 0.0 = invisible, 1.0 = fully opaque */
@@ -45,14 +45,14 @@ a {
 .knop2 {
   display: inline-block;
   
-  padding: 11px 5px;
-  margin: 30px 0;
+  padding: 1px 5px;
+  margin: 3px 0;
   font-size: 2rem;
   font-weight: 600;
   cursor: pointer;
   border: none;
   border-radius: 12px;
-  color: lch(93.15% 2.77 87.12);
+  color: lch(9.88% 2.45 83.81);
   text-shadow: 0 1px 3px #14030399;
   box-shadow: 0 4px 12px rgba(0,0,0,0.25);
   transition: all 0.28s ease;
@@ -84,8 +84,8 @@ a {
   display: inline-block;
   
   padding: 14px 40px;
-  margin: 25px 10px 5px 10px;
-  font-size: 1.1rem;
+  margin: auto;
+  font-size: 1rem;
   font-weight: 600;
   cursor: pointer;
   border: none;
@@ -96,7 +96,7 @@ a {
   transition: all 0.28s ease;
 
   /* Animated gradient for ALL buttons */
-  background: linear-gradient(90deg, oklab(90.127% -0.00328 -0.00819), rgb(230, 202, 213), oklch(93.318% 0.00391 106.894));
+  background: linear-gradient(90deg, #d5dbec, hwb(22 17% 63%), #e7e0f8);
   background-size: 200% 200%;
   animation: gradient-move 20s ease infinite;
   opacity: 0.75;   /* 0.0 = invisible, 1.0 = fully opaque */
@@ -121,8 +121,8 @@ a {
 .knopgotogame {
   display: inline-block;
   
-  padding: 4px 40px;
-  margin: 0px;
+  padding: 1px 40px;
+  margin: 10px;
   font-size: 1.2rem;
   font-weight: 600;
   cursor: pointer;
@@ -159,8 +159,8 @@ a {
 .knopgotolexicon {
   display: inline-block;
   
-  padding: 4px 40px;
-  margin: 0px 0px;
+  padding: 1px 40px;
+  margin: 0px 0px 10px 0px;
   font-size: 1.2rem;
   font-weight: 600;
   cursor: pointer;
@@ -197,8 +197,8 @@ a {
 .knopterug {
   display: inline-block;
   
-  padding: 14px 20px;
-  margin: 50px 5px;
+  padding: 1px 20px;
+  margin: 2px 5px;
   font-size: 2rem;
   font-weight: 600;
   cursor: pointer;
@@ -234,12 +234,7 @@ a {
 
 
 
-/* Animation keyframes */
-@keyframes gradient-move {
-  0%   { background-position: 0% 50%; }
-  50%  { background-position: 100% 50%; }
-  100% { background-position: 0% 50%; }
-}
+
 
 body {
   line-height: 1.5;
@@ -257,4 +252,56 @@ body {
   background-image: url(../pics/waterfall.jpg);
   background-position: center;
   background-size: cover;
+}
+
+.numbered-list {
+    counter-reset: step;
+    list-style: none;
+    padding: 0;
+    margin: 0.1rem 0;
+  }
+
+  .numbered-list li {
+    counter-increment: step;
+    padding: 0.1rem 1rem 0.1rem 3.5rem;
+    margin-bottom: 0.1rem;
+    background: linear-gradient(90deg, lab(62.07% -1.78 15.85), lab(81.57% 2.83 14.42), hsl(34, 78%, 23%));
+  background-size: 200% 200%;
+  animation: gradient-move 20s ease infinite;
+  opacity: 0.75;   /* 0.0 = invisible, 1.0 = fully opaque */
+
+  transition: opacity 0.3s ease, transform 0.3s ease;
+    border-radius: 0.5rem;
+    border-left: 6px solid hsl(29, 82%, 55%);
+    position: relative;
+  }
+
+  .numbered-list li::before {
+    content: counter(step);
+    position: absolute;
+    color: white;
+    left: 1rem;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 2rem;
+    height: 1rem;
+    background: linear-gradient(90deg, lab(55.11% 54.58 62.37), hwb(12 11% 16%), hwb(340 6% 62%));
+  background-size: 200% 200%;
+  animation: gradient-move 20s ease infinite;
+  opacity: 0.75;   /* 0.0 = invisible, 1.0 = fully opaque */
+
+  transition: opacity 0.3s ease, transform 0.3s ease;
+    
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+  }
+
+  /* Animation keyframes */
+@keyframes gradient-move {
+  0%   { background-position: 0% 50%; }
+  50%  { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
 }
