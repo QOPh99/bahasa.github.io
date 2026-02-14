@@ -99,7 +99,7 @@ p {
   rgba(210, 105, 30,   0.4)   /* chocolate */
 );
   background-size: 2000% 2000%;
-  animation: gradient-move 33s ease infinite;
+  animation: gradient-move 17s ease infinite;
   opacity: 1;   /* 0.0 = invisible, 1.0 = fully opaque */
   transition: opacity 0.3s ease, transform 0.3s ease;
 }
@@ -151,7 +151,7 @@ p {
   rgba(189, 183, 107,  0.5)
 );
   background-size: 3000% 3000%;
-  animation: gradient-move 33s ease infinite;
+  animation: gradient-move 17s ease infinite;
   opacity: 1;   /* 0.0 = invisible, 1.0 = fully opaque */
   transition: opacity 0.3s ease, transform 0.3s ease;
 }
@@ -203,7 +203,7 @@ p {
   rgba(46, 139, 87,    0.6)   /* sea green */
 );
   background-size: 200% 200%;
-  animation: gradient-move 33s ease infinite;
+  animation: gradient-move 17s ease infinite;
   opacity: 0.75;   /* 0.0 = invisible, 1.0 = fully opaque */
   transition: opacity 0.3s ease, transform 0.3s ease;
 }
@@ -255,7 +255,7 @@ p {
   rgba(183, 124, 33, 0.5)   /* chocolate */
 );
   background-size: 2000% 2000%;
-  animation: gradient-move 33s ease infinite;
+  animation: gradient-move 17s ease infinite;
   opacity: 1;   /* 0.0 = invisible, 1.0 = fully opaque */
   transition: opacity 0.3s ease, transform 0.3s ease;
 }
@@ -307,7 +307,7 @@ p {
   rgba(0, 206, 209,    0.5)   /* dark turquoise */
 );
   background-size: 2000% 2000%;
-  animation: gradient-move 33s ease infinite;
+  animation: gradient-move 17s ease infinite;
   opacity: 0.75;   /* 0.0 = invisible, 1.0 = fully opaque */
   transition: opacity 0.3s ease, transform 0.3s ease;
 }
@@ -351,7 +351,7 @@ p {
   rgba(110, 105, 30,   1)   /* chocolate */
 );
   background-size: 2000% 2000%;
-  animation: gradient-move 30s ease infinite;
+  animation: gradient-move 17s ease infinite;
   opacity: 1;   /* 0.0 = invisible, 1.0 = fully opaque */
   transition: opacity 0.3s ease, transform 0.3s ease;
       border: none;
