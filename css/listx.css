@@ -3,9 +3,11 @@
 
 .header {
   
-  width: 100%;
-  padding: 10px 80px; 
-  margin: 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
   font-size: 2rem;
   font-weight: 600;
   align-items: center;
