@@ -3,22 +3,20 @@ const sharedData = {
 
 
   groupz: {
-    "Algemeen": "cijfers kleuren",
+    "Taal & Communicatie": "cijfers taal geld ",
     "Mens & Gezondheid": "leven medisch",
-    "Natuur & Milieu": "dieren planten weer stenen metalen",
-    "Eten & Drinken": "eten snoep smaken",
-    "Vrije Tijd & Lifestyle": "relaxen sport hobby muziek uitgaan kleren",
+    "Eten & Drinken": "eten",
+    "Natuur & Milieu": "fauna flora weer stenen metalen",
+    "Vrije Tijd & Lifestyle": "uitgaan relaxen sport hobby muziek kleren visueel tec",
     "Reizen & Vervoer": "reizen verkeer auto space",
-    "Huis & Wonen": "gereedschap ",
-    "Taal & Communicatie": "taal geld",
-    "Cultuur & Samenleving": "cultuur religie politiek religie officieel_instituut"
+    "Huis & Wonen": "gereedschap",
+    "Cultuur & Samenleving": "baan_werk cultuur religie politiek religie officieel_instituut"
   },
   categories: {
             "cijfers": "1_tot_10 grote_cijfers wiskunde",
-            "kleuren": "normaal",
             "leven": "mensen familie familieleden straat",
-            "dieren": "fauna vogels vissen zee_creaturen insecten",
-            "planten": "planten bomen groente fruit kruiden specerijen",
+            "fauna": "dieren vogels vissen zee_creaturen insecten",
+            "flora": "bomen planten groente fruit kruiden specerijen",
             "eten": "smaken keuken restaurant dinner ontbijt toetjes snoep",
             "sport": "surf voetbal zeilen boot zee_oceaan",
             "weer": "soorten klimaat",
@@ -31,7 +29,7 @@ const sharedData = {
             "reizen": "vliegveld ov station",
             "verkeer": "fiets autos voetganger vvmiddel route regels",
             "geld": "betaal_pin betaal_cash rekening crypto",
-            "hobby": "speelgoed e-games board-games",
+            "hobby": "speelgoed e-games board-games kleuren",
             "muziek": "luisteren instrumenten audio hifi",
             "visueel": "tv movies",
             "auto": "interieur onderdelen",
@@ -215,7 +213,7 @@ const sharedData = {
                 ["masseur", "tukang pijat"],
                 ["anesthesist", "ahli anestesi"]
             ],
-            "fauna": [
+            "dieren": [
                 ["hond", "anjing"],
                 ["kat", "kucing"],
                 ["konijn", "kelinci"],
@@ -339,7 +337,7 @@ const sharedData = {
                 ["saffraan", "safron"],
                 ["korianderzaad", "biji ketumbar"]
              ],
-            "normaal": [
+            "kleuren": [
                 ["rood", "merah"],
                 ["zwart", "hitam"],
                 ["blauw", "biru"],
