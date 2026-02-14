@@ -14,7 +14,7 @@
   cursor: pointer;
   border: none;
   border-radius: 12px;
-  color: #241b1b;
+  color: #f8eeee;
   text-shadow: 0 1px 3px rgba(0,0,0,0.6);
   box-shadow: 0 4px 12px rgba(0,0,0,0.25);
   transition: all 0.28s ease;
@@ -54,7 +54,7 @@ body {
 button {
   display: block;
   width: 100%;
-  padding: 14px 20px;
+  padding: 10px 20px;
   margin: 10px 0;
   font-size: 1.1rem;
   font-weight: 600;
@@ -93,7 +93,7 @@ button {
 .sub-category.open {
   display: block;
   width: 80%;
-  padding: 14px 20px;
+  padding: 10px 20px;
   margin: 8px 0px 10px 65px;
   font-size: 1.1rem;
   font-weight: 600;
@@ -118,7 +118,7 @@ button {
 .sub-category.open ~ .word {
   display: block;
   width: 80%;
-  padding: 14px 20px;
+  padding: 10px 20px;
   margin: 8px 0px 10px 65px;
   font-size: 1.1rem;
   font-weight: 600;
@@ -166,7 +166,7 @@ button {
 .main-group {
   display: block;
   width: 100%;
-  padding: 18px 20px;
+  padding: 10px 20px;
   margin: 10px 0;
   font-size: 1.35rem;
   font-weight: 600;
@@ -187,7 +187,7 @@ button {
 .main-group.open {
   display: block;
   width: 100%;
-  padding: 18px 20px;
+  padding: 10px 20px;
   margin: 10px 0;
   font-size: 1.35rem;
   font-weight: 600;
@@ -208,7 +208,7 @@ button {
 .category {
   display: block;
   width: 90%;
-  padding: 14px 20px;
+  padding: 10px 20px;
   margin: 8px 0px 10px 32px;
   font-size: 1.25rem;
   font-weight: 600;
@@ -229,7 +229,7 @@ button {
 .category.open {
   display: block;
   width: 90%;
-  padding: 14px 20px;
+  padding: 10px 20px;
   margin: 8px 0px 10px 32px;
   font-size: 1.25rem;
   font-weight: 600;
@@ -251,7 +251,7 @@ button {
  
   color: #212529;
   
-  padding: 10px 14px;
+  padding: 8px 14px;
   border-radius: 6px;
   display: flex;
   justify-content: space-between;
@@ -416,44 +416,6 @@ button {
 }
 
 .knop2:active {
-  transform: translateY(-1px);
-  box-shadow: 0 4px 16px rgba(168, 85, 247, 0.45);
-}
-
-.knop3 {
-  display: inline-block;
-  
-  padding: 14px 20px;
-  margin: 15px 1px;
-  font-size: 2rem;
-  font-weight: 600;
-  cursor: pointer;
-  border: none;
-  border-radius: 12px;
-  color: #241b1b;
-  text-shadow: 0 1px 3px rgba(0,0,0,0.6);
-  box-shadow: 0 4px 12px rgba(0,0,0,0.25);
-  transition: all 0.28s ease;
-
-  /* Animated gradient for ALL buttons */
-  background: linear-gradient(90deg, lab(52.9% -9.59 56.29), lch(84.75% 51.04 102), hwb(56 7% 53%));
-  background-size: 200% 200%;
-  animation: gradient-move 14s ease infinite;
-  opacity: 0.75;   /* 0.0 = invisible, 1.0 = fully opaque */
-
-  transition: opacity 0.3s ease, transform 0.3s ease;
-}
-
-.knop3:hover,
-.knop3:focus-visible {
-  transform: translateY(-4px) scale(1.04);
-  box-shadow: 0 12px 32px rgba(236, 72, 153, 0.55);
-  background-position: right center;
-  opacity: 1.0;    /* become fully opaque on hover */
-  transform: translateY(-4px) scale(1.04);
-}
-
-.knop3:active {
   transform: translateY(-1px);
   box-shadow: 0 4px 16px rgba(168, 85, 247, 0.45);
 }

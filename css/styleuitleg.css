@@ -7,7 +7,7 @@ a {
 .knop1 {
   display: inline-block;
   
-  padding: 14px 40px;
+  padding: 4px 10px;
   margin: 4px 10px 5px 10px;
   font-size: 1.1rem;
   font-weight: 600;
@@ -59,7 +59,7 @@ a {
 
   /* Animated gradient for ALL buttons */
   background: linear-gradient(90deg, hsl(100, 2%, 25%), oklab(58.23500000000001% 0.20326 0.11045), lab(100% 0.01 -0.01));
-  background-size: 200% 200%;
+  background-size: 2000% 2000%;
   animation: gradient-move 30s ease infinite;
   opacity: 0.6;   /* 0.0 = invisible, 1.0 = fully opaque */
 
@@ -82,9 +82,9 @@ a {
 
 .knop3 {
   display: inline-block;
+  margin: 4px 25px 5px 25px;
+  padding: 4px 10px;
   
-  padding: 14px 40px;
-  margin: auto;
   font-size: 1rem;
   font-weight: 600;
   cursor: pointer;
@@ -96,7 +96,7 @@ a {
   transition: all 0.28s ease;
 
   /* Animated gradient for ALL buttons */
-  background: linear-gradient(90deg, #d5dbec, hwb(22 17% 63%), #e7e0f8);
+  background: linear-gradient(90deg, #d5dbec, hwb(22 73% 17%), #e7e0f8);
   background-size: 200% 200%;
   animation: gradient-move 20s ease infinite;
   opacity: 0.75;   /* 0.0 = invisible, 1.0 = fully opaque */
@@ -122,8 +122,8 @@ a {
   display: inline-block;
   
   padding: 1px 40px;
-  margin: 10px;
-  font-size: 1.2rem;
+  margin: 2px;
+  font-size: 1rem;
   font-weight: 600;
   cursor: pointer;
   border: none;
@@ -134,10 +134,10 @@ a {
   transition: all 0.28s ease;
 
   /* Animated gradient for ALL buttons */
-  background: linear-gradient(90deg, lab(44.4% -7.76 48.32), hsl(64, 94%, 48%), hsl(0, 0%, 100%));
+  background: linear-gradient(90deg, lab(44.4% -7.76 48.32), hsl(9, 89%, 51%), hsl(0, 0%, 100%));
   background-size: 200% 200%;
   animation: gradient-move 10s ease infinite;
-  opacity: 0.6;   /* 0.0 = invisible, 1.0 = fully opaque */
+  opacity: 0.8;   /* 0.0 = invisible, 1.0 = fully opaque */
 
   transition: opacity 0.3s ease, transform 0.3s ease;
 }
@@ -161,7 +161,7 @@ a {
   
   padding: 1px 40px;
   margin: 0px 0px 10px 0px;
-  font-size: 1.2rem;
+  font-size: 1rem;
   font-weight: 600;
   cursor: pointer;
   border: none;
@@ -175,7 +175,7 @@ a {
   background: linear-gradient(90deg, hwb(204 5% 12%), rgb(226, 222, 217), hsl(236, 88%, 34%));
   background-size: 200% 200%;
   animation: gradient-move 7s ease infinite;
-  opacity: 0.6;   /* 0.0 = invisible, 1.0 = fully opaque */
+  opacity: 0.8;   /* 0.0 = invisible, 1.0 = fully opaque */
 
   transition: opacity 0.3s ease, transform 0.3s ease;
 }
@@ -265,8 +265,8 @@ body {
     counter-increment: step;
     padding: 0.1rem 1rem 0.1rem 3.5rem;
     margin-bottom: 0.1rem;
-    background: linear-gradient(90deg, lab(62.07% -1.78 15.85), lab(81.57% 2.83 14.42), hsl(34, 78%, 23%));
-  background-size: 200% 200%;
+    background: linear-gradient(90deg, lab(89.78% -1.67 10.37), lab(93.8% 0.16 0.59), hwb(34 68% 16%));
+  background-size: 2000% 2000%;
   animation: gradient-move 20s ease infinite;
   opacity: 0.75;   /* 0.0 = invisible, 1.0 = fully opaque */
 
@@ -286,7 +286,7 @@ body {
     width: 2rem;
     height: 1rem;
     background: linear-gradient(90deg, lab(55.11% 54.58 62.37), hwb(12 11% 16%), hwb(340 6% 62%));
-  background-size: 200% 200%;
+  background-size: 2000% 2000%;
   animation: gradient-move 20s ease infinite;
   opacity: 0.75;   /* 0.0 = invisible, 1.0 = fully opaque */
 
