@@ -18,7 +18,7 @@ const header = document.querySelector('.header');
 const knop1 = document.querySelector('.knop1');
 const knop2 = document.querySelector('.knop2');
 
-const knop6 = document.querySelector('.knop6');
+
 
 
 const container = document.createElement("div");
@@ -61,7 +61,7 @@ function openSubMenu2(catKey) { /* catKey is category name */
   knop1.classList.remove("hidden");
   knop2.classList.remove("hidden");
   
-  knop6.classList.remove("hidden");
+  
 
   currentCategory = catKey;
   current = catKey;
@@ -119,7 +119,7 @@ function openSubMenu(catKey, key) { /* catKey is category name */
   knop1.classList.remove("hidden");
   knop2.classList.remove("hidden");
   
-  knop6.classList.remove("hidden");
+  
 
   currentCategory = catKey;
   
@@ -220,7 +220,7 @@ function startGame(subKey, pairs, key) {
   knop1.classList.add("hidden");
   knop2.classList.add("hidden");
   
-  knop6.classList.add("hidden");
+  
   if (index >= list.length) {
     const perc = list.length ? Math.round((score / list.length) * 100) : 0;
     container.classList.remove("hidden");
