@@ -70,7 +70,7 @@ p {
   justify-content: center;
   align-items: center;
   gap: 2rem;
-  font-size: 1.4rem;
+  font-size: 1.6rem;
   font-weight: 600;
   cursor: pointer;
   border: none;
@@ -83,8 +83,8 @@ p {
   90deg,
   rgba(255, 99, 71,    0),  /* tomato */
   rgba(255, 127, 80,   0),   /* coral */
-  rgba(255, 160, 122,  0),   /* light salmon */
-  rgba(210, 105, 30,   0),   /* chocolate */
+  rgba(255, 160, 122,  0.1),   /* light salmon */
+  rgba(210, 105, 30,   0.2),   /* chocolate */
   rgba(255, 99, 71,    0.1),   /* tomato */
   rgba(255, 127, 80,   0.3),   /* coral */
   rgba(255, 160, 122,  0.5),   /* light salmon */
@@ -177,7 +177,7 @@ p {
   justify-content: center;
   align-items: center;
   gap: 2rem;
-  font-size: 1.4rem;
+  font-size: 1.6rem;
   font-weight: 600;
   cursor: pointer;
   border: none;
@@ -188,13 +188,13 @@ p {
   transition: all 0.28s ease;
   background: linear-gradient(
   90deg,
-  rgba(50, 205, 50,   0),   /* lime green */
-  rgba(60, 179, 113,   0),   /* medium sea green */
-  rgba(34, 139, 34,    0),   /* forest green */
-  rgba(124, 252, 0,    0),   /* lawn green */
-  rgba(0, 255, 127,    0),   /* spring green */
-  rgba(144, 238, 144,  0),   /* light green */
-  rgba(46, 139, 87,    0),   /* sea green */
+  rgba(50, 205, 50,   0.05),   /* lime green */
+  rgba(60, 179, 113,   0.1),   /* medium sea green */
+  rgba(34, 139, 34,    0.2),   /* forest green */
+  rgba(124, 252, 0,    0.3),   /* lawn green */
+  rgba(0, 255, 127,    0.2),   /* spring green */
+  rgba(144, 238, 144,  0.1),   /* light green */
+  rgba(46, 139, 87,    0.2),   /* sea green */
   rgba(50, 205, 50,   0.1),   /* lime green */
   rgba(60, 179, 113,   0.3),   /* medium sea green */
   rgba(34, 139, 34,    0.5),   /* forest green */
@@ -229,7 +229,7 @@ p {
   justify-content: center;
   align-items: center;
   gap: 2rem;
-  font-size: 1.4rem;
+  font-size: 1.6rem;
   font-weight: 600;
   cursor: pointer;
   border: none;
@@ -281,7 +281,7 @@ p {
   justify-content: center;
   align-items: center;
   gap: 2rem;        
-  font-size: 1.4rem;
+  font-size: 1.6rem;
   font-weight: 600;
   cursor: pointer;
   border: none;
@@ -292,7 +292,7 @@ p {
   transition: all 0.28s ease;
   background: linear-gradient(
   90deg,
-  rgba(0, 191, 255,    0),   /* deep sky blue */
+  rgba(0, 191, 255,    0.1),   /* deep sky blue */
   rgba(30, 144, 255,   0.25),   /* dodger blue */
   rgba(0, 199, 238, 0.5),   /* pure blue */
   rgba(65, 105, 225,   0.7),   /* royal blue */
@@ -301,7 +301,7 @@ p {
   rgba(0, 206, 209,    0.6),   /* dark turquoise */
   rgba(0, 191, 255,    0.5),   /* deep sky blue */
   rgba(30, 144, 255,   0.4),   /* dodger blue */
-  rgba(0, 0, 255,      0.5),   /* pure blue */
+  rgba(0, 0, 255,      0.3),   /* pure blue */
   rgba(65, 105, 225,   0.4),   /* royal blue */
   rgba(100, 149, 237,  0.5),   /* cornflower blue */
   rgba(70, 130, 180,   0.6),   /* steel blue */
@@ -328,7 +328,7 @@ p {
 }
 
 .spin-btn {
-      padding: 2rem 2.5rem;
+      padding: 1rem 2.5rem;
       margin-bottom: 40px;
       font-size: 1.7rem;
       font-weight: bold;
@@ -336,12 +336,12 @@ p {
       text-shadow: 0 1px 3px rgba(0,0,0,0.6);
       background: linear-gradient(
   90deg,
-  rgba(14, 59, 80, 0.3),  /* tomato */
-  rgba(24, 131, 173, 0.6),   /* coral */
-  rgba(31, 104, 117, 0.9),   /* light salmon */
-  rgba(25, 104, 124, 0.7),   /* chocolate */
-  rgba(123, 200, 206, 0.7),   /* tomato */
-  rgba(20, 92, 151, 0.7),   /* coral */
+  rgba(177, 192, 199, 0.3),  /* tomato */
+  rgba(146, 192, 211, 0.5),   /* coral */
+  rgba(124, 190, 202, 0.4),   /* light salmon */
+  rgba(25, 104, 124, 0.3),   /* chocolate */
+  rgba(100, 126, 128, 0.2),   /* tomato */
+  rgba(99, 151, 194, 0.4),   /* coral */
   rgba(122, 149, 180, 0.6),   /* light salmon */
   rgba(30, 56, 140, 0.5),  /* chocolate */
   rgba(25, 137, 145, 0.5),  /* tomato */
