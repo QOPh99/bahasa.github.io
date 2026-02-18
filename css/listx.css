@@ -104,7 +104,7 @@ button {
   text-shadow: 0 1px 3px rgba(0,0,0,0.6);
   box-shadow: 0 4px 12px rgba(0,0,0,0.25);
   transition: all 0.28s ease;
-  background: linear-gradient(90deg, oklch(54.348% 0.09213 95.638), hwb(41 7% 54%), hsl(358, 21%, 27%));
+  background: linear-gradient(90deg, lab(21.5% -11.4 5.61), hsl(128, 49%, 18%), oklch(36.889% 0.04624 144.609));
   background-size: 400% 400%;
   animation: gradient-move 20s ease infinite;
   opacity: 0.65;   /* 0.0 = invisible, 1.0 = fully opaque */
@@ -149,7 +149,7 @@ button {
   text-shadow: 0 1px 3px rgba(0,0,0,0.6);
   box-shadow: 0 4px 12px rgba(0,0,0,0.25);
   transition: all 0.28s ease;
-  background: linear-gradient(90deg, hwb(263 24% 54%), hwb(204 12% 51%), lab(18.46% 39.88 -51.02));
+  background: linear-gradient(90deg, lab(8.2% -5.59 2.72), hsl(202, 68%, 31%), oklch(51.482% 0.00986 145.707));
   background-size: 200% 200%;
   animation: gradient-move 7s ease infinite;
   opacity: 0.65;   /* 0.0 = invisible, 1.0 = fully opaque */
@@ -198,7 +198,7 @@ button {
   text-shadow: 0 1px 3px rgba(0,0,0,0.6);
   box-shadow: 0 4px 12px rgba(0,0,0,0.25);
   transition: all 0.28s ease;
-  background: linear-gradient(90deg, hsl(76, 23%, 48%), hwb(41 8% 59%), lab(28.96% 26.75 31.68));
+  background: linear-gradient(90deg, lab(21.5% -11.4 5.61), hsl(128, 49%, 18%), oklch(36.889% 0.04624 144.609));
   background-size: 200% 200%;
   animation: gradient-move 12s ease infinite;
   opacity: 0.65;   /* 0.0 = invisible, 1.0 = fully opaque */
@@ -219,7 +219,7 @@ button {
   text-shadow: 0 1px 3px rgba(0,0,0,0.6);
   box-shadow: 0 4px 12px rgba(0,0,0,0.25);
   transition: all 0.28s ease;
-  background: linear-gradient(90deg, hsl(127, 30%, 21%), hwb(107 7% 68%), lab(28.96% 26.75 31.68));
+  background: linear-gradient(90deg, lab(8.2% -5.59 2.72), hsl(202, 68%, 31%), oklch(51.482% 0.00986 145.707));
   background-size: 400% 400%;
   animation: gradient-move 21s ease infinite;
   opacity: 0.65;   /* 0.0 = invisible, 1.0 = fully opaque */
@@ -240,7 +240,7 @@ button {
   text-shadow: 0 1px 3px rgba(0,0,0,0.6);
   box-shadow: 0 4px 12px rgba(0,0,0,0.25);
   transition: all 0.28s ease;
-  background: linear-gradient(90deg, hsl(76, 23%, 48%), hwb(41 8% 59%), lab(28.96% 26.75 31.68));
+  background: linear-gradient(90deg, lab(21.5% -11.4 5.61), hsl(128, 49%, 18%), oklch(36.889% 0.04624 144.609));
   background-size: 200% 200%;
   animation: gradient-move 7s ease infinite;
   opacity: 0.65;   /* 0.0 = invisible, 1.0 = fully opaque */
