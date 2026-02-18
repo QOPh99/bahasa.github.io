@@ -11,7 +11,7 @@ const sharedData = {
     "Vrije Tijd & Lifestyle": "uitgaan sport hobby kleding muziek tec",
     "Reizen & Vervoer": "reizen verkeer auto space",
     "Huis & Wonen": "relaxen gereedschap",
-    "Cultuur & Samenleving": "baan_werk religie politiek religie officieel_instituut"
+    "Cultuur & Samenleving": "baan_werk religie politiek officieel_instituut"
   },
   categories: {
             "makkelijk": "1_tot_10 kleuren dieren fruit groet smaken",
@@ -24,12 +24,12 @@ const sharedData = {
             "sport": "surf voetbal zeilen boot zee_oceaan",
             "weer": "soorten klimaat",
             "relaxen": "thuis met_familie sauna therapie",
-            "taal": "groet omgang voorzetsels werkwoorden informeel formeel vrienden straat",
+            "taal": "groet omgang formeel informeel vrienden voorzetsels werkwoorden",
             "kleding": "netjes gewoon opgedirkt schoenen",
             "uitgaan": " restaurant clubbing concert kroeg",
             "medisch": "personen gebouw symptomen klachten lichaamsdelen medicijnen",
             "reizen": "vliegveld ov station",
-            "verkeer": "fiets autos voetganger vvmiddel route regels",
+            "verkeer": "straat fiets autos voetganger vvmiddel route regels",
             "geld": "betaal_pin betaal_cash rekening crypto",
             "hobby": "speelgoed e-games board-games kleuren",
             "muziek": "luisteren instrumenten",
