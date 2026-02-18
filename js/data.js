@@ -4,14 +4,14 @@ const sharedData = {
 
   groupz: {
     "Basics": "makkelijk",
-    "Taal & Communicatie": "cijfers taal geld ",
-    "Mens & Gezondheid": "leven medisch",
+    "Taal & Communicatie": "taal cijfers geld ",
+    "Mens & Gezondheid": "leven baan_werk medisch",
     "Eten & Drinken": "eten ingredienten boodschappen",
     "Natuur & Milieu": "natuur weer steen metalen",
     "Vrije Tijd & Lifestyle": "uitgaan sport hobby kleding muziek tec",
     "Reizen & Vervoer": "reizen verkeer auto space",
     "Huis & Wonen": "relaxen gereedschap",
-    "Cultuur & Samenleving": "baan_werk religie politiek officieel_instituut"
+    "Cultuur & Samenleving": "religie politiek officieel_instituut"
   },
   categories: {
             "makkelijk": "1_tot_10 kleuren dieren fruit groet smaken",
@@ -42,7 +42,7 @@ const sharedData = {
             "politiek": "officials",
             "officieel_instituut": "stadhuis politieburo kerk",
             "religie": "islam protestantism catholicism hinduism buddhism confucianism",
-            "tec": "pc audio video audio hifi tv movies"
+            "tec": "pc video audio hifi tv movies"
         },
 
    wordLists: {
@@ -258,6 +258,7 @@ const sharedData = {
                 ["koe", "sapi"],
                 ["varken", "babi"],
                 ["schaap", "domba"],
+                ["vis", "ikan"],
                 ["kip", "ayam"],
                 ["olifant", "gajah"],
                 ["tijger", "harimau"],
