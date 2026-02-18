@@ -92,7 +92,7 @@ button {
 
 .sub-category.open {
   display: block;
-  width: 80%;
+  width: 75%;
   padding: 10px 20px;
   margin: 8px 0px 10px 65px;
   font-size: 1.1rem;
@@ -117,7 +117,7 @@ button {
 .sub-category + .word,
 .sub-category.open ~ .word {
   display: block;
-  width: 80%;
+  width: 75%;
   padding: 10px 20px;
   margin: 8px 0px 10px 65px;
   font-size: 1.1rem;
@@ -138,7 +138,7 @@ button {
 
 .sub-category {
   display: block;
-  width: 80%;
+  width: 75%;
   margin: 8px 0px 10px 65px;
   font-size: 1.1rem;
   font-weight: 600;
@@ -207,7 +207,7 @@ button {
 
 .category {
   display: block;
-  width: 90%;
+  width: 85%;
   padding: 10px 20px;
   margin: 8px 0px 10px 32px;
   font-size: 1.25rem;
@@ -228,7 +228,7 @@ button {
 
 .category.open {
   display: block;
-  width: 90%;
+  width: 85%;
   padding: 10px 20px;
   margin: 8px 0px 10px 32px;
   font-size: 1.25rem;
