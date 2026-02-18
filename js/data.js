@@ -18,7 +18,7 @@ const sharedData = {
             "cijfers": "1_tot_10 grote_cijfers wiskunde",
             "leven": "mensen familie familieleden straat",
             "natuur": "dieren vogels vissen bomen planten zee_creaturen insecten",
-            "ingredienten": "groente fruit kruiden specerijen",
+            "ingrediënten": "groente fruit kruiden specerijen",
             "eten": "smaken keuken dinner ontbijt toetjes snoep",
             "boodschappen": "winkelen mall toko warung",
             "sport": "surf voetbal zeilen boot zee_oceaan",
