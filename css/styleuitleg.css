@@ -134,7 +134,7 @@ a {
   transition: all 0.28s ease;
 
   /* Animated gradient for ALL buttons */
-  background: linear-gradient(90deg, lab(44.4% -7.76 48.32), hsl(9, 89%, 51%), hsl(0, 0%, 100%));
+  background: linear-gradient(90deg, lch(81.32% 9.51 107.05), hsl(9, 89%, 51%), hsl(0, 0%, 100%));
   background-size: 200% 200%;
   animation: gradient-move 10s ease infinite;
   opacity: 0.8;   /* 0.0 = invisible, 1.0 = fully opaque */
@@ -156,6 +156,44 @@ a {
   box-shadow: 0 4px 16px rgba(168, 85, 247, 0.45);
 }
 
+.knopgotogames {
+  display: inline-block;
+  
+  padding: 1px 40px;
+  margin: 2px;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  border: none;
+  border-radius: 12px;
+  color: oklab(18.297% 0.00099 0.00238);
+  text-shadow: 0 1px 3px #ebd03b99;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.25);
+  transition: all 0.28s ease;
+
+  /* Animated gradient for ALL buttons */
+  background: linear-gradient(90deg, lch(87.05% 86.3 98.92), hsl(9, 89%, 51%), hwb(59 38% 5%));
+  background-size: 200% 200%;
+  animation: gradient-move 9s ease infinite;
+  opacity: 0.8;   /* 0.0 = invisible, 1.0 = fully opaque */
+
+  transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+.knopgotogames:hover,
+.knopgotogames:focus-visible {
+  transform: translateY(-4px) scale(1.04);
+  box-shadow: 0 12px 32px rgba(236, 72, 153, 0.55);
+  background-position: right center;
+  opacity: 1.0;    /* become fully opaque on hover */
+  transform: translateY(-4px) scale(1.04);
+}
+
+.knopgotogames:active {
+  transform: translateY(-1px);
+  box-shadow: 0 4px 16px rgba(168, 85, 247, 0.45);
+}
+
 .knopgotolexicon {
   display: inline-block;
   
@@ -172,7 +210,7 @@ a {
   transition: all 0.28s ease;
 
   /* Animated gradient for ALL buttons */
-  background: linear-gradient(90deg, hwb(204 5% 12%), rgb(226, 222, 217), hsl(236, 88%, 34%));
+  background: linear-gradient(90deg, hwb(204 5% 12%), rgb(226, 222, 217), hwb(0 5% 31%));
   background-size: 200% 200%;
   animation: gradient-move 7s ease infinite;
   opacity: 0.8;   /* 0.0 = invisible, 1.0 = fully opaque */
@@ -190,6 +228,44 @@ a {
 }
 
 .knopgotolexicon:active {
+  transform: translateY(-1px);
+  box-shadow: 0 4px 16px rgba(168, 85, 247, 0.45);
+}
+
+.knopgotolexicons {
+  display: inline-block;
+  
+  padding: 1px 40px;
+  margin: 0px 0px 10px 0px;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  border: none;
+  border-radius: 12px;
+  color: oklab(18.297% 0.00099 0.00238);
+  text-shadow: 0 1px 3px #ebd03b99;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.25);
+  transition: all 0.28s ease;
+
+  /* Animated gradient for ALL buttons */
+  background: linear-gradient(90deg, hwb(204 5% 12%), rgb(236, 204, 57), hwb(0 10% 30%));
+  background-size: 200% 200%;
+  animation: gradient-move 8s ease infinite;
+  opacity: 0.8;   /* 0.0 = invisible, 1.0 = fully opaque */
+
+  transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+.knopgotolexicons:hover,
+.knopgotolexicons:focus-visible {
+  transform: translateY(-4px) scale(1.04);
+  box-shadow: 0 12px 32px rgba(236, 72, 153, 0.55);
+  background-position: right center;
+  opacity: 1.0;    /* become fully opaque on hover */
+  transform: translateY(-4px) scale(1.04);
+}
+
+.knopgotolexicons:active {
   transform: translateY(-1px);
   box-shadow: 0 4px 16px rgba(168, 85, 247, 0.45);
 }
