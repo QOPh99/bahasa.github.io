@@ -1,0 +1,383 @@
+
+
+a {
+  text-decoration: none;
+}
+
+.knop1 {
+  display: inline-block;
+  
+  padding: 4px 10px;
+  margin: 4px 10px 5px 10px;
+  font-size: 1.1rem;
+  font-weight: 600;
+  cursor: pointer;
+  border: none;
+  border-radius: 12px;
+  color: rgb(34, 30, 24);
+  text-shadow: 0 1px 3px rgba(0,0,0,0.6);
+  box-shadow: 0 4px 12px rgba(0,0,0,0.25);
+  transition: all 0.28s ease;
+
+  /* Animated gradient for ALL buttons */
+  background: linear-gradient(90deg, hsl(103, 6%, 25%), lch(61.89% 0.96 343.41), lch(63.83% 37.08 233.71));
+  background-size: 200% 200%;
+  animation: gradient-move 20s ease infinite;
+  opacity: 0.75;   /* 0.0 = invisible, 1.0 = fully opaque */
+
+  transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+.knop1:hover,
+.knop1:focus-visible {
+  transform: translateY(-4px) scale(1.04);
+  box-shadow: 0 12px 32px rgba(236, 72, 153, 0.55);
+  background-position: right center;
+  opacity: 1.0;    /* become fully opaque on hover */
+  transform: translateY(-4px) scale(1.04);
+}
+
+.knop1:active {
+  transform: translateY(-1px);
+  box-shadow: 0 4px 16px rgba(168, 85, 247, 0.45);
+}
+
+.knop2 {
+  display: inline-block;
+  
+  padding: 1px 5px;
+  margin: 3px 0;
+  font-size: 2rem;
+  font-weight: 600;
+  cursor: pointer;
+  border: none;
+  border-radius: 12px;
+  color: lch(9.88% 2.45 83.81);
+  text-shadow: 0 1px 3px #14030399;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.25);
+  transition: all 0.28s ease;
+
+  /* Animated gradient for ALL buttons */
+  background: linear-gradient(90deg, hsl(100, 2%, 25%), oklab(58.23500000000001% 0.20326 0.11045), lab(100% 0.01 -0.01));
+  background-size: 2000% 2000%;
+  animation: gradient-move 30s ease infinite;
+  opacity: 0.6;   /* 0.0 = invisible, 1.0 = fully opaque */
+
+  transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+.knop2:hover:hover,
+.knop2:focus-visible {
+  transform: translateY(-4px) scale(1.04);
+  box-shadow: 0 12px 32px rgba(236, 72, 153, 0.55);
+  background-position: right center;
+  opacity: 1.0;    /* become fully opaque on hover */
+  transform: translateY(-4px) scale(1.04);
+}
+
+.knop2:active {
+  transform: translateY(-1px);
+  box-shadow: 0 4px 16px rgba(168, 85, 247, 0.45);
+}
+
+.knop3 {
+  display: inline-block;
+  margin: 4px 25px 5px 25px;
+  padding: 4px 10px;
+  
+  font-size: 1.1rem;
+  font-weight: 600;
+  cursor: pointer;
+  border: none;
+  border-radius: 12px;
+  color: oklab(12.798000000000002% -0.00081 0.00268);
+  text-shadow: 0 1px 3px #f8a30499;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.25);
+  transition: all 0.28s ease;
+
+  /* Animated gradient for ALL buttons */
+  background: linear-gradient(90deg, #d5dbec, hwb(22 73% 17%), #e7e0f8);
+  background-size: 200% 200%;
+  animation: gradient-move 20s ease infinite;
+  opacity: 0.75;   /* 0.0 = invisible, 1.0 = fully opaque */
+
+  transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+.knop3:hover,
+.knop3:focus-visible {
+  transform: translateY(-4px) scale(1.04);
+  box-shadow: 0 12px 32px rgba(236, 72, 153, 0.55);
+  background-position: right center;
+  opacity: 1.0;    /* become fully opaque on hover */
+  transform: translateY(-4px) scale(1.04);
+}
+
+.knop3:active {
+  transform: translateY(-1px);
+  box-shadow: 0 4px 16px rgba(168, 85, 247, 0.45);
+}
+
+.knopgotogame {
+  display: inline-block;
+  
+  padding: 1px 40px;
+  margin: 2px;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  border: none;
+  border-radius: 12px;
+  color: oklab(18.297% 0.00099 0.00238);
+  text-shadow: 0 1px 3px #ebd03b99;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.25);
+  transition: all 0.28s ease;
+
+  /* Animated gradient for ALL buttons */
+  background: linear-gradient(90deg, lch(81.32% 9.51 107.05), hsl(9, 89%, 51%), hsl(0, 0%, 100%));
+  background-size: 200% 200%;
+  animation: gradient-move 10s ease infinite;
+  opacity: 0.8;   /* 0.0 = invisible, 1.0 = fully opaque */
+
+  transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+.knopgotogame:hover,
+.knopgotogame:focus-visible {
+  transform: translateY(-4px) scale(1.04);
+  box-shadow: 0 12px 32px rgba(236, 72, 153, 0.55);
+  background-position: right center;
+  opacity: 1.0;    /* become fully opaque on hover */
+  transform: translateY(-4px) scale(1.04);
+}
+
+.knopgotogame:active {
+  transform: translateY(-1px);
+  box-shadow: 0 4px 16px rgba(168, 85, 247, 0.45);
+}
+
+.knopgotogames {
+  display: inline-block;
+  
+  padding: 1px 40px;
+  margin: 2px;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  border: none;
+  border-radius: 12px;
+  color: oklab(18.297% 0.00099 0.00238);
+  text-shadow: 0 1px 3px #ebd03b99;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.25);
+  transition: all 0.28s ease;
+
+  /* Animated gradient for ALL buttons */
+  background: linear-gradient(90deg, lch(87.05% 86.3 98.92), hsl(9, 89%, 51%), hwb(59 38% 5%));
+  background-size: 200% 200%;
+  animation: gradient-move 9s ease infinite;
+  opacity: 0.8;   /* 0.0 = invisible, 1.0 = fully opaque */
+
+  transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+.knopgotogames:hover,
+.knopgotogames:focus-visible {
+  transform: translateY(-4px) scale(1.04);
+  box-shadow: 0 12px 32px rgba(236, 72, 153, 0.55);
+  background-position: right center;
+  opacity: 1.0;    /* become fully opaque on hover */
+  transform: translateY(-4px) scale(1.04);
+}
+
+.knopgotogames:active {
+  transform: translateY(-1px);
+  box-shadow: 0 4px 16px rgba(168, 85, 247, 0.45);
+}
+
+.knopgotolexicon {
+  display: inline-block;
+  
+  padding: 1px 40px;
+  margin: 0px 0px 10px 0px;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  border: none;
+  border-radius: 12px;
+  color: oklab(18.297% 0.00099 0.00238);
+  text-shadow: 0 1px 3px #ebd03b99;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.25);
+  transition: all 0.28s ease;
+
+  /* Animated gradient for ALL buttons */
+  background: linear-gradient(90deg, hwb(204 5% 12%), rgb(226, 222, 217), hwb(0 5% 31%));
+  background-size: 200% 200%;
+  animation: gradient-move 7s ease infinite;
+  opacity: 0.8;   /* 0.0 = invisible, 1.0 = fully opaque */
+
+  transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+.knopgotolexicon:hover,
+.knopgotolexicon:focus-visible {
+  transform: translateY(-4px) scale(1.04);
+  box-shadow: 0 12px 32px rgba(236, 72, 153, 0.55);
+  background-position: right center;
+  opacity: 1.0;    /* become fully opaque on hover */
+  transform: translateY(-4px) scale(1.04);
+}
+
+.knopgotolexicon:active {
+  transform: translateY(-1px);
+  box-shadow: 0 4px 16px rgba(168, 85, 247, 0.45);
+}
+
+.knopgotolexicons {
+  display: inline-block;
+  
+  padding: 1px 40px;
+  margin: 0px 0px 10px 0px;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  border: none;
+  border-radius: 12px;
+  color: oklab(18.297% 0.00099 0.00238);
+  text-shadow: 0 1px 3px #ebd03b99;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.25);
+  transition: all 0.28s ease;
+
+  /* Animated gradient for ALL buttons */
+  background: linear-gradient(90deg, hwb(204 5% 12%), rgb(236, 204, 57), hwb(0 10% 30%));
+  background-size: 200% 200%;
+  animation: gradient-move 8s ease infinite;
+  opacity: 0.8;   /* 0.0 = invisible, 1.0 = fully opaque */
+
+  transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+.knopgotolexicons:hover,
+.knopgotolexicons:focus-visible {
+  transform: translateY(-4px) scale(1.04);
+  box-shadow: 0 12px 32px rgba(236, 72, 153, 0.55);
+  background-position: right center;
+  opacity: 1.0;    /* become fully opaque on hover */
+  transform: translateY(-4px) scale(1.04);
+}
+
+.knopgotolexicons:active {
+  transform: translateY(-1px);
+  box-shadow: 0 4px 16px rgba(168, 85, 247, 0.45);
+}
+
+.knopterug {
+  display: inline-block;
+  
+  padding: 1px 20px;
+  margin: 2px 5px;
+  font-size: 2rem;
+  font-weight: 600;
+  cursor: pointer;
+  border: none;
+  border-radius: 12px;
+  color: lch(94.2% 2.76 87.12);
+  text-shadow: 0 1px 3px rgba(0,0,0,0.6);
+  box-shadow: 0 4px 12px rgba(0,0,0,0.25);
+  transition: all 0.28s ease;
+
+  /* Animated gradient for ALL buttons */
+  background: linear-gradient(90deg, hsl(103, 6%, 25%), rgb(226, 222, 217), #cf0202);
+  background-size: 200% 200%;
+  animation: gradient-move 20s ease infinite;
+  opacity: 0.75;   /* 0.0 = invisible, 1.0 = fully opaque */
+
+  transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+.knopterug:hover,
+.knopterug:focus-visible {
+  transform: translateY(-4px) scale(1.04);
+  box-shadow: 0 12px 32px rgba(236, 72, 153, 0.55);
+  background-position: right center;
+  opacity: 1.0;    /* become fully opaque on hover */
+  transform: translateY(-4px) scale(1.04);
+}
+
+.knopterug:active {
+  transform: translateY(-1px);
+  box-shadow: 0 4px 16px rgba(168, 85, 247, 0.45);
+}
+
+
+
+
+
+body {
+  line-height: 1.5;
+  margin: 0;
+  padding: 20px;
+  padding-top: 4px;
+  max-width: 480px;
+  margin-left: auto;
+  margin-right: auto;
+  min-height: 100vh;
+  background: hsl(46, 86%, 14%);
+  font-family: system-ui, sans-serif;
+  color: #fff;
+  text-align: center;
+  background-image: url(../pics/waterfall.jpg);
+  background-position: center;
+  background-size: cover;
+}
+
+.numbered-list {
+    counter-reset: step;
+    list-style: none;
+    padding: 0;
+    margin: 0.1rem 0;
+  }
+
+  .numbered-list li {
+    counter-increment: step;
+    padding: 0.1rem 1rem 0.1rem 3.5rem;
+    margin-bottom: 0.1rem;
+    background: linear-gradient(90deg, lab(89.78% -1.67 10.37), lab(93.8% 0.16 0.59), hwb(34 68% 16%));
+  background-size: 2000% 2000%;
+  animation: gradient-move 20s ease infinite;
+  opacity: 0.75;   /* 0.0 = invisible, 1.0 = fully opaque */
+
+  transition: opacity 0.3s ease, transform 0.3s ease;
+    border-radius: 0.5rem;
+    border-left: 6px solid hsl(29, 82%, 55%);
+    position: relative;
+  }
+
+  .numbered-list li::before {
+    content: counter(step);
+    position: absolute;
+    color: white;
+    left: 1rem;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 2rem;
+    height: 1rem;
+    background: linear-gradient(90deg, lab(55.11% 54.58 62.37), hwb(12 11% 16%), hwb(340 6% 62%));
+  background-size: 2000% 2000%;
+  animation: gradient-move 20s ease infinite;
+  opacity: 0.75;   /* 0.0 = invisible, 1.0 = fully opaque */
+
+  transition: opacity 0.3s ease, transform 0.3s ease;
+    
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+  }
+
+  /* Animation keyframes */
+@keyframes gradient-move {
+  0%   { background-position: 0% 50%; }
+  50%  { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
