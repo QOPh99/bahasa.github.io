@@ -81,10 +81,10 @@ p {
   transition: all 0.28s ease;
   background: linear-gradient(
   90deg,
-  rgba(255, 99, 71,    0),  /* tomato */
-  rgba(255, 127, 80,   0),   /* coral */
-  rgba(255, 160, 122,  0.1),   /* light salmon */
-  rgba(210, 105, 30,   0.2),   /* chocolate */
+  rgba(236, 232, 227, 0.493),  /* tomato */
+  rgba(255, 255, 255, 0.301),   /* coral */
+  rgb(47, 92, 30),   /* light salmon */
+  rgba(231, 219, 210, 0.2),   /* chocolate */
   rgba(255, 99, 71,    0.1),   /* tomato */
   rgba(255, 127, 80,   0.3),   /* coral */
   rgba(255, 160, 122,  0.5),   /* light salmon */
@@ -118,13 +118,67 @@ p {
   box-shadow: 0 4px 16px rgba(168, 85, 247, 0.45);
 }
 
+.knop8 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+  font-size: 1.6rem;
+  font-weight: 600;
+  cursor: pointer;
+  border: none;
+  border-radius: 12px;
+  color: #f0ebeb;
+  text-shadow: 0 1px 3px rgba(0,0,0,0.6);
+  box-shadow: 0 4px 12px rgba(0,0,0,0.25);
+  transition: all 0.28s ease;
+  background: linear-gradient(
+  90deg,
+  rgba(94, 63, 17, 0),  /* tomato */
+  rgba(255, 194, 80, 0),   /* coral */
+  rgba(255, 160, 122,  0.1),   /* light salmon */
+  rgba(210, 105, 30,   0.2),   /* chocolate */
+  rgba(255, 169, 71, 0.1),   /* tomato */
+  rgba(255, 173, 80, 0.3),   /* coral */
+  rgba(255, 231, 122, 0.5),   /* light salmon */
+  rgba(198, 210, 30, 0.7),  /* chocolate */
+  rgba(58, 26, 20, 0.7),  /* tomato */
+  rgba(21, 51, 29, 0.7),   /* coral */
+  rgba(39, 58, 22, 0.7),   /* light salmon */
+  rgba(207, 210, 30, 0.7),   /* chocolate */
+  rgba(252, 255, 71, 0.6),   /* tomato */
+  rgba(252, 255, 80, 0.5),   /* coral */
+  rgba(242, 255, 122, 0.5),   /* light salmon */
+  rgba(210, 183, 30, 0.4)   /* chocolate */
+);
+  background-size: 2000% 2000%;
+  animation: gradient-move 12s ease infinite;
+  opacity: 1;   /* 0.0 = invisible, 1.0 = fully opaque */
+  transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+.knop8:hover,
+.knop8:focus-visible {
+  transform: translateY(-4px) scale(1.04);
+  box-shadow: 0 12px 32px rgba(236, 72, 153, 0.55);
+  background-position: right center;
+  opacity: 0.6;    /* become fully opaque on hover */
+  transform: translateY(-4px) scale(1.04);
+}
+
+.knop8:active {
+  transform: translateY(-1px);
+  box-shadow: 0 4px 16px rgba(168, 85, 247, 0.45);
+}
+
 .knopbedankt {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   gap: 2rem;
-  margin-top: 90px;
+  margin-top: 40px;
   font-size: 1rem;
   font-weight: 600;
   cursor: pointer;
@@ -240,11 +294,11 @@ p {
   transition: all 0.28s ease;
   background: linear-gradient(
   135deg,
-  rgba(13, 124, 33, 0.25),   /* dark orange */
-  rgba(124, 104, 13, 0.5),   /* orange */
-  rgba(124, 94, 11, 0.7),  /* orangered */
-  rgba(116, 95, 5, 0.7),   /* tomato */
-  rgba(129, 84, 16, 0.6),   /* coral */
+  rgba(167, 164, 8, 0.25),   /* dark orange */
+  rgba(126, 146, 13, 0.5),   /* orange */
+  rgba(113, 124, 11, 0.7),  /* orangered */
+  rgba(92, 116, 5, 0.7),   /* tomato */
+  rgba(112, 129, 16, 0.6),   /* coral */
   rgba(168, 158, 9, 0.5),   /* light salmon */
   rgba(141, 122, 15, 0.5),   /* chocolate */
   rgba(146, 126, 12, 0.5),   /* dark orange */
@@ -323,6 +377,58 @@ p {
 }
 
 .knop3:active {
+  transform: translateY(-1px);
+  box-shadow: 0 4px 16px rgba(168, 85, 247, 0.45);
+}
+
+.knop9 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;        
+  font-size: 1.6rem;
+  font-weight: 600;
+  cursor: pointer;
+  border: none;
+  border-radius: 12px;
+  color: hsl(0, 17%, 95%);
+  text-shadow: 0 1px 3px rgba(0,0,0,0.6);
+  box-shadow: 0 4px 12px rgba(0,0,0,0.25);
+  transition: all 0.28s ease;
+  background: linear-gradient(
+  90deg,
+  rgba(30, 11, 53, 0.1),   /* deep sky blue */
+  rgba(64, 26, 95, 0.25),   /* dodger blue */
+  rgba(90, 25, 110, 0.5),   /* pure blue */
+  rgba(94, 10, 89, 0.7),   /* royal blue */
+  rgba(195, 105, 247, 0.7),   /* cornflower blue */
+  rgba(145, 70, 180, 0.7),   /* steel blue */
+  rgba(91, 0, 209, 0.6),   /* dark turquoise */
+  rgba(89, 0, 255, 0.5),   /* deep sky blue */
+  rgba(154, 30, 255, 0.4),   /* dodger blue */
+  rgba(110, 22, 168, 0.3),   /* pure blue */
+  rgba(74, 23, 116, 0.4),   /* royal blue */
+  rgba(161, 39, 218, 0.5),   /* cornflower blue */
+  rgba(210, 93, 221, 0.6),   /* steel blue */
+  rgba(97, 9, 124, 0.5)   /* dark turquoise */
+);
+  background-size: 2000% 2000%;
+  animation: gradient-move 17s ease infinite;
+  opacity: 0.75;   /* 0.0 = invisible, 1.0 = fully opaque */
+  transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+.knop9:hover,
+.knop9:focus-visible {
+  transform: translateY(-4px) scale(1.04);
+  box-shadow: 0 12px 32px rgba(236, 72, 153, 0.55);
+  background-position: right center;
+  opacity: 1.0;    /* become fully opaque on hover */
+  transform: translateY(-4px) scale(1.04);
+}
+
+.knop9:active {
   transform: translateY(-1px);
   box-shadow: 0 4px 16px rgba(168, 85, 247, 0.45);
 }
