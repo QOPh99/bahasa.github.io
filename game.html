@@ -3,21 +3,37 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Nederlands → Bahasa Indonesia</title>
-  <link rel="stylesheet" href="css/stylegame.css">
+  <title>Marfs Bahasa Indonesia</title>
+  <link rel="stylesheet" href="css/stylehome.css">
 </head>
 <body>
-  <a class="header">GAME (easy)</a>
-  <a href="list.html" class="knop1">📃</a>
-  <a href="index.html" class="knop2">🏠</a>
-  <a href="game.html" class="knop3">🎮</a>
-  <a href="gamex.html" class="knop6">🎮</a>
-  <h1 id="title"></h1>
+  <button class="spin-btn" id="myButton">
+    🎮
+  </button>
+
   
+  <a href="index.html" class="knop2">🔙 🏠</a>
+  <a href="gamep.html" class="knop9">PO POLSKU</a>
+  <a href="gamex.html" class="knop1">BAHASA</a>
+  <a href="games.html" class="knop8">ESPAÑOL</a>
   
-  <div id="mainMenu"></div>
-  <div id="gameArea" class="hidden"></div>
-  <script src="js/data.js"></script>
-  <script src="js/scriptgame.js"></script>
+  <script>
+    const button = document.getElementById('myButton');
+
+    button.addEventListener('click', () => {
+      // Prevent spamming / overlapping animations
+      if (button.classList.contains('spinning')) return;
+
+      // Start spinning
+      button.classList.add('spinning');
+      button.textContent = '🎮';
+
+      // Stop after exactly 3 seconds
+      setTimeout(() => {
+        button.classList.remove('spinning');
+        button.textContent = '🎮';
+      }, 1100);
+    });
+  </script>
 </body>
 </html>
